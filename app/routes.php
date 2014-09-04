@@ -11,6 +11,20 @@
 |
 */
 
+Route::get('/', function(){
+    return Redirect::action('login');
+});
+
+Route::get('/login', [
+    'uses'  => 'SessionsController@getLogin',
+    'as'    => 'login'
+]);
+Route::post('/login', [
+    'uses'  => 'SessionsController@postLogin',
+    'as'    => 'login'
+]);
+
+
 Route::group(array('before' => 'auth'), function()
 {
     Route::get('/', function()
