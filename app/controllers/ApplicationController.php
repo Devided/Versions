@@ -10,8 +10,7 @@ class ApplicationController extends \BaseController {
 	 */
 	public function index()
 	{
-		//return view if user is logged in
-
+		return View::make('admin.applications')->with('applications', Application::all());
 	}
 
 	/**
