@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function(
+Route::get('/', function(){
     return Redirect::action('login');
-));
+});
 
 Route::get('/login', [
     'uses'  => 'SessionsController@getLogin',
