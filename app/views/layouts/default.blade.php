@@ -22,8 +22,6 @@
 {{ HTML::script('assets/vendor/jquery/jquery.js') }}
 {{ HTML::script('assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js') }}
 {{ HTML::script('assets/vendor/bootstrap/js/bootstrap.js') }}
-{{ HTML::script('assets/vendor/nanoscroller/nanoscroller.js') }}
-{{ HTML::script('assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js') }}
 {{ HTML::script('assets/vendor/magnific-popup/magnific-popup.js') }}
 {{ HTML::script('assets/vendor/jquery-placeholder/jquery.placeholder.js') }}
 {{ HTML::script('assets/javascripts/theme.js') }}
