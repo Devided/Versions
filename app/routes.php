@@ -41,6 +41,7 @@ Route::group(array('before' => 'auth'), function()
     Route::resource('/plugin', 'PluginController');
     Route::get('/setting', 'SettingController@index');
     Route::put('/setting', 'SettingController@update');
+    Route::get('/logout', 'SessionsController@destroy');
 });
 
 Route::get('/api/{id}/js', 'APIController@js');
