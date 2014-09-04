@@ -264,31 +264,16 @@ a:active {
 		border-top: 3px solid #cccccc;
 		height: 63px;
 		position: absolute;
-		top: 25px;
 	}
 
 	/* Layout Boxed - Inner Wrapper */
 	html.boxed .inner-wrapper {
-		padding-top: 88px;
-		padding-bottom: 25px;
+		padding-top: 63px;
 	}
 
 	/* Layout Boxed - Content Body */
 	html.boxed .content-body {
 		background-color: #ecedf0;
-	}
-
-	/* Layout Boxed - Border Radius */
-	html.boxed .header {
-		border-radius: 5px 5px 0 0;
-	}
-
-	html.boxed .sidebar-left {
-		border-radius: 0 0 0 5px;
-	}
-
-	html.boxed .content-body {
-		border-radius: 0 0 5px 0;
 	}
 
 	html.boxed .sidebar-right {

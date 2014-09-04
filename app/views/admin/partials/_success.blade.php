@@ -1,1 +1,5 @@
-/home/vagrant/Code/Versions/app/views/admin/partials/_success.blade.php
+@if(Session::has('success'))
+<div class="alert alert-success">
+    {{ Session::get('success') }}
+</div>
+@endif
