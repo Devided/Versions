@@ -32,7 +32,11 @@ Route::group(array('before' => 'auth'), function()
         return Redirect::to('/overview');
     });
 
-    Route::get('/overview', 'OverviewController@index');
+    Route::get('/overview', [
+        'uses'  =>  'OverviewController@index',
+        'as'    =>  'dashboard'
+    ]);
+
     Route::resource('/application', 'ApplicationController');
     Route::resource('/plugin', 'PluginController');
     Route::get('/setting', 'SettingController@index');

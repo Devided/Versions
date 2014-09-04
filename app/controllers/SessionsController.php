@@ -40,16 +40,7 @@ class SessionsController extends \BaseController {
 
             // attempt to do the login
             if (Auth::attempt($userdata)) {
-                //check if user has access and is no admin
-                if(!Auth::user()->access && !Auth::user()->admin)
-                {
-                    Auth::logout();
-                    return Redirect::to('login')->withErrors('Deze account is nog niet actief.');
-                }
-                else
-                {
-                    return Redirect::action('dashboard');
-                }
+                return Redirect::action('dashboard');
             } else {
                 // validation not successful, send back to form
                 return Redirect::to('login')->withErrors('Gebruikersnaam of wachtwoord onjuist.');
