@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="fixed">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Versions | Maximum</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>CDN Control | Maximum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    {{ HTML::style('css/bootstrap.min.css') }}
-    {{ HTML::style('css/bootstrap-theme.min.css') }}
-    {{ HTML::style('css/main.css') }}
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+    {{ HTML::style('assets/vendor/bootstrap/css/bootstrap.css') }}
+    {{ HTML::style('assets/vendor/font-awesome/css/font-awesome.css') }}
+    {{ HTML::style('assets/vendor/magnific-popup/magnific-popup.css') }}
+    {{ HTML::style('assets/vendor/bootstrap-datepicker/css/datepicker3.css') }}
+    {{ HTML::style('assets/stylesheets/theme.css') }}
+    {{ HTML::style('assets/stylesheets/skins/default.css') }}
+    {{ HTML::style('assets/stylesheets/theme-custom.css') }}
 
-    {{ HTML::script('js/vendor/modernizr-2.6.2.min.js') }}
+    {{ HTML::script('assets/vendor/modernizr/modernizr.js') }}
 </head>
 <body>
-    @yield('page')
+@yield('page')
 
-    {{ HTML::script('js/vendor/jquery-1.11.0.min.js') }}
-    {{ HTML::script('js/vendor/bootstrap.min.js') }}
-    {{ HTML::script('js/main.js') }}
+{{ HTML::script('assets/vendor/jquery/jquery.js') }}
+{{ HTML::script('assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js') }}
+{{ HTML::script('assets/vendor/bootstrap/js/bootstrap.js') }}
+{{ HTML::script('assets/vendor/nanoscroller/nanoscroller.js') }}
+{{ HTML::script('assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js') }}
+{{ HTML::script('assets/vendor/magnific-popup/magnific-popup.js') }}
+{{ HTML::script('assets/vendor/jquery-placeholder/jquery.placeholder.js') }}
+{{ HTML::script('assets/javascripts/theme.js') }}
+{{ HTML::script('assets/javascripts/theme.custom.js') }}
+{{ HTML::script('assets/javascripts/theme.init.js') }}
 </body>
 </html>
