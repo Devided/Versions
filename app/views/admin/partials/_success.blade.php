@@ -1,0 +1,1 @@
+/home/vagrant/Code/Versions/app/views/admin/partials/_success.blade.php
