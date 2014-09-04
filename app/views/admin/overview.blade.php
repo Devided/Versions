@@ -1,1 +1,4 @@
-/home/vagrant/Code/Versions/app/views/admin/overview.blade.php
+@extends('layouts.default')
+@section('page')
+<p>test</p>
+@stop
