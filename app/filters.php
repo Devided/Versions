@@ -48,6 +48,12 @@ Route::filter('auth', function()
 	}
 });
 
+//filter to check if the user is logged in, if not redirect back to login screen
+Route::filter('login.check', function()
+{
+    if (!Auth::check()) return View::make('auth.login');
+});
+
 
 Route::filter('auth.basic', function()
 {

@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', function()
+Route::group(array('before' => 'login.check'), function()
 {
-	return View::make('hello');
+    Route::get('/', function()
+    {
+        return Redirect::to('/application');
+    });
+
+    Route::resource('/application', 'ApplicationController');
+    Route::resource('/plugin', 'PluginController');
+    Route::resource('/setting', 'SettingController');
+
 });
-
-
