@@ -21,7 +21,9 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/jquery-1.11.0.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/vendor/modernizr-2.6.2.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/packages/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/OverviewController.php" afterPath="$PROJECT_DIR$/app/controllers/OverviewController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filters.php" afterPath="$PROJECT_DIR$/app/filters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Versions.iws" />
@@ -45,10 +47,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
+      <file leaf-file-name="APIController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/APIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="18" selection-start="483" selection-end="483" vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="855">
+            <state line="26" column="1" selection-start="319" selection-end="319" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="18" selection-start="888" selection-end="888" vertical-scroll-proportion="0.39419088" vertical-offset="0" max-vertical-offset="723">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/SettingController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="5" selection-start="320" selection-end="320" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="480">
+              <folding>
+                <element signature="e#7#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env.local.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="26" selection-start="121" selection-end="128" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OverviewController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/OverviewController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="34" selection-start="207" selection-end="207" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
@@ -63,37 +112,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/SessionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="7" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1365">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014_09_03_153712_update_users_table.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_03_153712_update_users_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="49" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="filters.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/filters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="48" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1530">
+            <state line="35" column="19" selection-start="920" selection-end="924" vertical-scroll-proportion="-9.5" vertical-offset="162" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="30" selection-start="1382" selection-end="1437" vertical-scroll-proportion="0.5915493" vertical-offset="0" max-vertical-offset="710">
+            <state line="28" column="30" selection-start="1382" selection-end="1437" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -130,16 +161,19 @@
         <option value="$PROJECT_DIR$/app/controllers/ApplicationController.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_09_03_153301_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_09_03_153712_update_users_table.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/login.blade.php" />
-        <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/public/assets/stylesheets/skins/default.css" />
         <option value="$PROJECT_DIR$/app/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/OverviewController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/APIController.php" />
+        <option value="$PROJECT_DIR$/app/filters.php" />
+        <option value="$PROJECT_DIR$/app/controllers/SettingController.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
       </list>
     </option>
   </component>
@@ -548,19 +582,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="136" selection-end="136" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_03_153301_create_users_table.php">
@@ -578,27 +602,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/ApplicationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="10" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="48" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/SessionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="450">
           <folding />
         </state>
       </provider>
@@ -647,7 +650,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="1382" selection-end="1437" vertical-scroll-proportion="0.5915493" vertical-offset="0" max-vertical-offset="710">
+        <state line="28" column="30" selection-start="1382" selection-end="1437" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/OverviewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="207" selection-end="207" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/APIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="1" selection-start="319" selection-end="319" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="480">
+          <folding>
+            <element signature="e#7#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="121" selection-end="128" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SessionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="190" selection-end="190" vertical-scroll-proportion="-0.5767635" vertical-offset="642" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="920" selection-end="924" vertical-scroll-proportion="-9.5" vertical-offset="162" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="5" selection-start="320" selection-end="320" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="18" selection-start="888" selection-end="888" vertical-scroll-proportion="0.39419088" vertical-offset="0" max-vertical-offset="723">
           <folding />
         </state>
       </provider>

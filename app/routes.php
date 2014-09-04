@@ -11,15 +11,19 @@
 |
 */
 
-Route::group(array('before' => 'login.check'), function()
+Route::group(array('before' => 'auth'), function()
 {
     Route::get('/', function()
     {
-        return Redirect::to('/application');
+        return Redirect::to('/overview');
     });
 
+    Route::get('/overview', 'OverviewController@index');
     Route::resource('/application', 'ApplicationController');
     Route::resource('/plugin', 'PluginController');
-    Route::resource('/setting', 'SettingController');
-
+    Route::get('/setting', 'SettingController@index');
+    Route::put('/setting', 'SettingController@update');
 });
+
+Route::get('/api/{id}/js', 'APIController@js');
+Route::get('/api/{id}/css', 'APIController@css');
