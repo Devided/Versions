@@ -9,13 +9,13 @@
             <nav id="menu" class="nav-main" role="navigation">
                 <ul class="nav nav-main">
                     <li>
-                        <a href="index.html">
+                        <a href="{{ action('dashboard') }}">
                             <i class="fa fa-home" aria-hidden="true"></i>
                             <span>Overview</span>
                         </a>
                     </li>
                     <li>
-                        <a href="mailbox-folder.html">
+                        <a href="{{ action('applications.index') }}">
                             <i class="fa fa-hdd-o" aria-hidden="true"></i>
                             <span>Applications</span>
                         </a>

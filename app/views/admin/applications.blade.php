@@ -1,16 +1,13 @@
 @extends('layouts.default')
 
+@section('title', 'Application overview')
+
 @section('page')
 
 <div class="row">
     <div class="col-md-12">
         <section class="panel">
             <header class="panel-heading">
-                <div class="panel-actions">
-                    <a href="#" class="fa fa-caret-down"></a>
-                    <a href="#" class="fa fa-times"></a>
-                </div>
-
                 <h2 class="panel-title">Applications</h2>
             </header>
             <div class="panel-body">
