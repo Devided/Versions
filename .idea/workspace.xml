@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf64d616-8bea-48ef-88ef-0ac577739fe3" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/applications.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/applications.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
@@ -9,6 +10,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/overview.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/overview.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/stylesheets/theme.css" afterPath="$PROJECT_DIR$/public/assets/stylesheets/theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ApplicationController.php" afterPath="$PROJECT_DIR$/app/controllers/ApplicationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/partials/_header.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/partials/_header.blade.php" />
+>>>>>>> 4cbcf55c2890b3ba32b18b8f5cf7a0539273e1b6
     </list>
     <ignored path="Versions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,6 +36,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file leaf-file-name="login.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,6 +122,12 @@
         <entry file="file://$PROJECT_DIR$/app/views/admin/applications.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="42" selection-start="210" selection-end="210" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="855">
+=======
+      <file leaf-file-name="_header.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/partials/_header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="61" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.3631579" vertical-offset="1081" max-vertical-offset="2001">
+>>>>>>> 4cbcf55c2890b3ba32b18b8f5cf7a0539273e1b6
               <folding />
             </state>
           </provider>
@@ -151,7 +163,12 @@
         <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/app/controllers/SettingController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/controllers/OverviewController.php" />
+=======
+        <option value="$PROJECT_DIR$/app/views/admin/partials/_success.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/application.blade.php" />
+>>>>>>> 4cbcf55c2890b3ba32b18b8f5cf7a0539273e1b6
         <option value="$PROJECT_DIR$/app/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/login.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
@@ -159,8 +176,13 @@
         <option value="$PROJECT_DIR$/app/views/admin/partials/_header.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/overview.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/applications.blade.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/public/assets/stylesheets/theme.css" />
         <option value="$PROJECT_DIR$/public/assets/stylesheets/skins/default.css" />
+=======
+        <option value="$PROJECT_DIR$/app/controllers/ApplicationController.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/partials/_header.blade.php" />
+>>>>>>> 4cbcf55c2890b3ba32b18b8f5cf7a0539273e1b6
       </list>
     </option>
   </component>
@@ -772,6 +794,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="25" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.66390043" vertical-offset="0" max-vertical-offset="723">
@@ -780,6 +803,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/views/admin/overview.blade.php">
+>>>>>>> 4cbcf55c2890b3ba32b18b8f5cf7a0539273e1b6
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="23" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
           <folding />
@@ -838,6 +864,27 @@
     <entry file="file://$PROJECT_DIR$/public/assets/stylesheets/skins/default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="245" column="23" selection-start="4671" selection-end="4671" vertical-scroll-proportion="0.5416667" vertical-offset="3285" max-vertical-offset="12240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ApplicationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="10" selection-start="901" selection-end="901" vertical-scroll-proportion="0.61319536" vertical-offset="860" max-vertical-offset="2553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/partials/_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="61" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.3631579" vertical-offset="1081" max-vertical-offset="2001">
           <folding />
         </state>
       </provider>

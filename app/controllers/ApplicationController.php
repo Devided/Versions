@@ -56,7 +56,7 @@ class ApplicationController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+        //
 	}
 
 	/**
@@ -68,7 +68,24 @@ class ApplicationController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+        $rules = [
+            'name'  => 'required|alphaNum|min:3',
+            'url'   => 'required|alphaNum|active_url'
+        ];
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails())
+        {
+            return Redirect::back()->withErrors($validator->messages());
+        }
+
+        $app = Application::find($id);
+        $app->name = Input::get('name');
+        $app->url = Input::get('url');
+        $app->save();
+
+        return Redirect::back()->withSuccess('Application saved!');
 	}
 
 	/**
@@ -80,7 +97,10 @@ class ApplicationController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$app = Application::find($id);
+        $app->delete();
+
+        return Redirect::back()->withSuccess('Application removed!');
 	}
 
 }
