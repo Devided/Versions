@@ -1450,7 +1450,7 @@ html.fixed .visible-xl-inline-block {
 		background-image: -webkit-linear-gradient(#f6f6f6 0%, white 45%);
 		background-image: linear-gradient(#f6f6f6 0%, white 45%);
 		border-bottom: 1px solid #E9E9E6;
-		border-top: 3px solid #EDEDED;
+		border-top: 3px solid #fb6101;
 	}
 
 	.header .logo-container .logo {

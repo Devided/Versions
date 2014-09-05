@@ -41,8 +41,8 @@
                     <div class="row">
                         <div class="col-sm-8"></div>
                         <div class="col-sm-4 text-right">
-                            {{ Form::button('Inloggen', ['class' => 'btn btn-primary hidden-xs', 'type' => 'submit']) }}
-                            {{ Form::button('Inloggen', ['class' => 'btn btn-primary btn-block btn-lg visible-xs mt-lg', 'type' => 'submit']) }}
+                            {{ Form::button('Login', ['class' => 'btn btn-primary hidden-xs', 'type' => 'submit']) }}
+                            {{ Form::button('Login', ['class' => 'btn btn-primary btn-block btn-lg visible-xs mt-lg', 'type' => 'submit']) }}
                         </div>
                     </div>
                 {{ Form::close() }}
