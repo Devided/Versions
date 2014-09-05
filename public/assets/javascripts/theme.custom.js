@@ -36,3 +36,7 @@ $(document).on('click', '.modal-confirm', function (e) {
         type: 'success'
     });
 });
+
+function setupDeleteModal(name,id){
+    $('#modalDeleteName').text(name);
+}

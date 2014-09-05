@@ -37,7 +37,7 @@
                                     @endif
                                     <td class="actions">
                                         <a href=""><span class="text-warning"><i class="fa fa-pencil"></i></span></a>
-                                        <a href="#modalDelete" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>
+                                        <a href="#modalDelete" onclick="setupDeleteModal('{{{ $app->name }}}', {{ $app->id }})" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>
                                     </td>
                                 </tr>
 
@@ -61,14 +61,14 @@
                     <i class="fa fa-question-circle"></i>
                 </div>
                 <div class="modal-text">
-                    <p>Are you sure that you want to delete this image?</p>
+                    <p>Are you sure that you want to delete: <b><span id="modalDeleteName">null</span></b>?</p>
                 </div>
             </div>
         </div>
         <footer class="panel-footer">
             <div class="row">
                 <div class="col-md-12 text-right">
-                    <button class="btn btn-primary modal-confirm">Confirm</button>
+                    <button class="btn btn-success modal-confirm">Delete</button>
                     <button class="btn btn-default modal-dismiss">Cancel</button>
                 </div>
             </div>
