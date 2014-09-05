@@ -40,11 +40,7 @@
                                     @if($app->active)
                                         <span class="text-succes"><i class="fa fa-circle"></i> Active</span>
                                     @else
-<<<<<<< HEAD
-                                        <span class="text-danger">Inactive</span>
-=======
-                                        <td><span class="text-danger"><i class="fa fa-circle"></i> Inactive</span></td>
->>>>>>> 3c404436e81b7c2fa5b6fd448f019a642acfc2b2
+                                        <span class="text-danger"><i class="fa fa-circle"></i> Inactive</span>
                                     @endif
                                         </a>
                                         {{ Form::close() }}
