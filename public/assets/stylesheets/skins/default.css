@@ -243,11 +243,11 @@ p.drop-caps.colored.secundary:first-child:first-letter {
 }
 /* Header */
 .header .toggle-sidebar-left {
-	background: #0088cc;
+	background: #fb6101;
 }
 /* Page Header */
 .page-header h2 {
-	border-bottom-color: #0088cc;
+	border-bottom-color: #fb6101;
 }
 
 .page-header .sidebar-right-toggle:hover {
@@ -670,16 +670,16 @@ html.no-overflowscrolling .nano > .nano-pane > .nano-slider {
 }
 /* Notifications */
 .notifications .notification-menu .notification-title {
-	background: #0088cc;
+	background: #fb6101;
 }
 
 .notifications .notification-menu .notification-title .label-default {
-	background-color: #006699;
+	background-color: #a94100;
 }
 
 .notifications .notification-menu:before,
 .notifications .notification-icon:before {
-	border-bottom-color: #0088cc;
+	border-bottom-color: #fb6101;
 }
 
 .ui-pnotify .notification-primary {
