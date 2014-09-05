@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Versions overview')
+@section('title', 'Overview')
 
 @section('page')
 <p>test</p>
