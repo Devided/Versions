@@ -70,10 +70,10 @@
                 <ul class="list-unstyled">
                     <li class="divider"></li>
                     <li>
-                        {{ HTML::decode(HTML::link('/setting','<i class="fa fa-gear"></i> Settings', array('role' => 'menuitem','tabindex' => '-1')))}}
+                        {{ HTML::decode(HTML::link(action('admin.settings'),'<i class="fa fa-gear"></i> Settings', array('role' => 'menuitem','tabindex' => '-1')))}}
                     </li>
                     <li>
-                        {{ HTML::decode(HTML::link('/logout','<i class="fa fa-power-off"></i> Logout', array('role' => 'menuitem','tabindex' => '-1')))}}
+                        {{ HTML::decode(HTML::link(action('admin.logout'),'<i class="fa fa-power-off"></i> Logout', array('role' => 'menuitem','tabindex' => '-1')))}}
                     </li>
                 </ul>
             </div>

@@ -39,9 +39,9 @@ Route::group(array('before' => 'auth'), function()
 
     Route::resource('/applications', 'ApplicationController');
     Route::resource('/plugin', 'PluginController');
-    Route::get('/settings', 'SettingController@index');
-    Route::put('/settings', 'SettingController@update');
-    Route::get('/logout', 'SessionsController@destroy');
+    Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
+    Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings']);
+    Route::get('/logout', ['uses' => 'SessionsController@destroy','as' => 'admin.logout']);
 });
 
 Route::get('/api/{id}/js', 'APIController@js');
