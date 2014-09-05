@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf64d616-8bea-48ef-88ef-0ac577739fe3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/applications.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/applications.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/app/views/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Versions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
+      <file leaf-file-name="_sidebar.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="39" selection-start="715" selection-end="715" vertical-scroll-proportion="0.27236843" vertical-offset="184" max-vertical-offset="1357">
+            <state line="17" column="62" selection-start="680" selection-end="680" vertical-scroll-proportion="0.50582147" vertical-offset="0" max-vertical-offset="773">
               <folding />
             </state>
           </provider>
@@ -74,10 +74,10 @@
         <option value="$PROJECT_DIR$/app/views/admin/partials/_success.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/application.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ApplicationController.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/applications.blade.php" />
         <option value="$PROJECT_DIR$/app/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" />
       </list>
     </option>
   </component>
@@ -709,20 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="34" selection-start="955" selection-end="955" vertical-scroll-proportion="0.61707634" vertical-offset="213" max-vertical-offset="1012">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="707" selection-end="707" vertical-scroll-proportion="0.5355757" vertical-offset="0" max-vertical-offset="773">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/applications.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="36" selection-start="705" selection-end="705" vertical-scroll-proportion="0.22639069" vertical-offset="308" max-vertical-offset="1380">
@@ -733,6 +719,27 @@
     <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="39" selection-start="715" selection-end="715" vertical-scroll-proportion="0.27236843" vertical-offset="184" max-vertical-offset="1357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/vendor/jquery-ui/development-bundle/demos/slider/side-scroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3151">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="60" selection-start="981" selection-end="981" vertical-scroll-proportion="0.61707634" vertical-offset="213" max-vertical-offset="1012">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="62" selection-start="680" selection-end="680" vertical-scroll-proportion="0.50582147" vertical-offset="0" max-vertical-offset="773">
           <folding />
         </state>
       </provider>
