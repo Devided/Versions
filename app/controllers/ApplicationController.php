@@ -10,7 +10,7 @@ class ApplicationController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('admin.applications')->with('applications', Application::all());
+		return View::make('admin.applications')->with('applications', Application::paginate('10'));
 	}
 
 	/**
