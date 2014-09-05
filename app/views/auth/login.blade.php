@@ -15,7 +15,7 @@
                 @include('admin.partials._errors')
 
                     <div class="form-group mb-lg">
-                        <label>E-Mail</label>
+                        <label>Gebruikersnaam</label>
                         <div class="input-group input-group-icon">
                             {{ Form::text('username', null, ['class' => 'form-control input-lg', 'placeholder' => 'Gebruikersnaam']) }}
 									<span class="input-group-addon">
