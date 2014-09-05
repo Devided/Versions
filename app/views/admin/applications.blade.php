@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Application overview')
+@section('title', 'Applications')
 
 @section('page')
 
@@ -33,7 +33,7 @@
                                     @if($app->active)
                                         <td><span class="text-success"><i class="fa fa-circle"></i> Active</span></td>
                                     @else
-                                        <td><span class="text-danger">Inactive</span></td>
+                                        <td><span class="text-danger"><i class="fa fa-circle"></i> Inactive</span></td>
                                     @endif
                                     <td class="actions">
                                         <a href=""><span class="text-warning"><i class="fa fa-pencil"></i></span></a>
