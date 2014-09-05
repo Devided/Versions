@@ -23,7 +23,7 @@
         @include('admin.partials._sidebar')
         <section role="main" class="content-body">
             <header class="page-header">
-            <h2>Page title</h2>
+            <h2>@yield('title')</h2>
         </header>
         @yield('page')
         </section>

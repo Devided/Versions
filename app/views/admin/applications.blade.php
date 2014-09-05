@@ -1,5 +1,7 @@
 @extends('layouts.default')
 
+@section('title', 'Application Management')
+
 @section('page')
 
 <div class="row">
