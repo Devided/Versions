@@ -9,7 +9,7 @@
         <section class="panel">
             <header class="panel-heading">
                 <div class="panel-actions">
-                    <button type="button" class="btn btn-success"><i class="fa fa-plus"></i> Add</button>
+                    <button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button>
                 </div>
                 <h2 class="panel-title">Applications</h2>
             </header>
