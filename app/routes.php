@@ -37,7 +37,7 @@ Route::group(array('before' => 'auth'), function()
         'as'    =>  'dashboard'
     ]);
 
-    Route::resource('/application', 'ApplicationController');
+    Route::resource('/applications', 'ApplicationController');
     Route::resource('/plugin', 'PluginController');
     Route::get('/setting', 'SettingController@index');
     Route::put('/setting', 'SettingController@update');
