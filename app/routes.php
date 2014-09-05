@@ -21,7 +21,8 @@ Route::get('/login', [
 ]);
 Route::post('/login', [
     'uses'  => 'SessionsController@postLogin',
-    'as'    => 'login'
+    'as'    => 'login',
+    'before' => 'csrf'
 ]);
 
 
@@ -38,9 +39,10 @@ Route::group(array('before' => 'auth'), function()
     ]);
 
     Route::resource('/applications', 'ApplicationController');
+    Route::patch('/applications/switch/{id}', ['uses' => 'ApplicationController@status', 'as' => 'applications.switch', 'before' => 'csrf'] );
     Route::resource('/plugin', 'PluginController');
     Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
-    Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings']);
+    Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings', 'before' => 'csrf']);
     Route::get('/logout', ['uses' => 'SessionsController@destroy','as' => 'admin.logout']);
 });
 

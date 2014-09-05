@@ -103,4 +103,23 @@ class ApplicationController extends \BaseController {
         return Redirect::back()->withSuccess('Application removed!');
 	}
 
+
+    /**
+     *  Switch app status
+     *  PATCH /applications/switch/{id}
+     *
+     * @param $id
+     * @return mixed
+     */
+    public function status($id)
+    {
+        $app = Application::find($id);
+
+        $app->active = !$app->active;
+
+        if(!$app->save()) { Redirect::back()->withErrors('Try again..'); }
+
+        return Redirect::back()->withSuccess('Application status switched');
+    }
+
 }
