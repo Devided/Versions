@@ -38,6 +38,7 @@ Route::group(array('before' => 'auth'), function()
     ]);
 
     Route::resource('/applications', 'ApplicationController');
+    Route::patch('/applications/switch/{id}', ['uses' => 'ApplicationController@status', 'as' => 'applications.switch'] );
     Route::resource('/plugin', 'PluginController');
     Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
     Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings']);
