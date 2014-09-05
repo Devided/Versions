@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.login')
 @section('page')
 <section class="body-sign">
     <div class="center-sign">

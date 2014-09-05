@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="fixed">
+<html class="boxed">
 <head>
     <meta charset="UTF-8">
     <title>CDN Control | Maximum</title>
@@ -17,7 +17,20 @@
     {{ HTML::script('assets/vendor/modernizr/modernizr.js') }}
 </head>
 <body>
-@yield('page')
+<section class="body">
+    @include('admin.partials._header')
+    <div class="inner-wrapper">
+        @include('admin.partials._sidebar')
+
+        <section role="main" class="content-body">
+            <header class="page-header">
+            <h2>Page title</h2>
+        </header>
+
+        @yield('page')
+        </section>
+       </div>
+</section>
 
 {{ HTML::script('assets/vendor/jquery/jquery.js') }}
 {{ HTML::script('assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js') }}

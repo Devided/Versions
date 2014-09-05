@@ -11,6 +11,7 @@ class OverviewController extends \BaseController {
 	public function index()
 	{
 		//get CDN Control overview
+        return View::make('admin.overview');
 	}
 
 }
