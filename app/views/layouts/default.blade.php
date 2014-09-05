@@ -2,7 +2,7 @@
 <html class="boxed">
 <head>
     <meta charset="UTF-8">
-    <title>CDN Control | Maximum</title>
+    <title>Versions | Maximum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
@@ -21,12 +21,10 @@
     @include('admin.partials._header')
     <div class="inner-wrapper">
         @include('admin.partials._sidebar')
-
         <section role="main" class="content-body">
             <header class="page-header">
             <h2>Page title</h2>
         </header>
-
         @yield('page')
         </section>
        </div>

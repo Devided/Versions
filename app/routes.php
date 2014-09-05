@@ -39,8 +39,8 @@ Route::group(array('before' => 'auth'), function()
 
     Route::resource('/applications', 'ApplicationController');
     Route::resource('/plugin', 'PluginController');
-    Route::get('/setting', 'SettingController@index');
-    Route::put('/setting', 'SettingController@update');
+    Route::get('/settings', 'SettingController@index');
+    Route::put('/settings', 'SettingController@update');
     Route::get('/logout', 'SessionsController@destroy');
 });
 
