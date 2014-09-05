@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf64d616-8bea-48ef-88ef-0ac577739fe3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ApplicationController.php" afterPath="$PROJECT_DIR$/app/controllers/ApplicationController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/partials/_header.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/partials/_header.blade.php" />
-    </list>
+    <list default="true" id="bf64d616-8bea-48ef-88ef-0ac577739fe3" name="Default" comment="" />
     <ignored path="Versions.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
       <file leaf-file-name="_header.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/partials/_header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="61" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.3631579" vertical-offset="1081" max-vertical-offset="2001">
+            <state line="62" column="48" selection-start="3326" selection-end="3326" vertical-scroll-proportion="0.30394736" vertical-offset="1195" max-vertical-offset="2001">
               <folding />
             </state>
           </provider>
@@ -754,7 +751,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/partials/_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="61" selection-start="2900" selection-end="2900" vertical-scroll-proportion="0.3631579" vertical-offset="1081" max-vertical-offset="2001">
+        <state line="62" column="48" selection-start="3326" selection-end="3326" vertical-scroll-proportion="0.30394736" vertical-offset="1195" max-vertical-offset="2001">
           <folding />
         </state>
       </provider>
