@@ -59,8 +59,8 @@
                 <figure class="profile-picture">
                     <img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
                 </figure>
-                <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
-                    <span class="name">John Doe Junior</span>
+                <div class="profile-info" data-lock-name="{{ Auth::user()->username }}" data-lock-email="{{ Auth::user()->email }}">
+                    <span class="name">{{ Auth::user()->username }}</span>
                     <span class="role">administrator</span>
                 </div>
 
@@ -70,10 +70,10 @@
                 <ul class="list-unstyled">
                     <li class="divider"></li>
                     <li>
-                        <a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> Settings</a>
+                        {{ HTML::decode(HTML::link('/setting','<i class="fa fa-gear"></i> Settings', array('role' => 'menuitem','tabindex' => '-1')))}}
                     </li>
                     <li>
-                        <a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-power-off"></i> Logout</a>
+                        {{ HTML::decode(HTML::link('/logout','<i class="fa fa-power-off"></i> Logout', array('role' => 'menuitem','tabindex' => '-1')))}}
                     </li>
                 </ul>
             </div>
