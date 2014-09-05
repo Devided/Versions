@@ -46,6 +46,7 @@
                     </table>
                 </div>
             </div>
+            {{ $applications->links() }}
         </section>
     </div>
 </div>
