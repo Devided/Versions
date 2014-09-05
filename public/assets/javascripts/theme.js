@@ -136,9 +136,6 @@ window.theme = {};
 		},
 
 		events: function() {
-			if ( this.customScroll ) {
-				this.eventsSidebarLeft();
-			}
 
 			this.eventsSidebarRight();
 			this.eventsContentMenu();
@@ -160,48 +157,6 @@ window.theme = {};
 		},
 
 		buildSidebarLeft: function() {
-			this.sidebars.left.$nano = this.sidebars.left.$el.find( '.nano' );
-
-			this.sidebars.left.$nano.nanoScroller({
-				alwaysVisible: true,
-				preventPageScrolling: true
-			});
-
-			return this;
-		},
-
-		eventsSidebarLeft: function() {
-
-			var $nano = this.sidebars.left.$nano;
-
-			var updateNanoScroll = function() {
-				if ( $.support.transition ) {
-					$nano.nanoScroller();
-					$nano
-						.one('bsTransitionEnd', updateNanoScroll)
-						.emulateTransitionEnd(150)
-				} else {
-					updateNanoScroll();
-				}
-			};
-
-			this.sidebars.left.$el
-				.on( 'click', function() {
-					updateNanoScroll();
-				});
-
-			$nano
-				.on( 'mouseenter', function() {
-					if ( $html.hasClass( 'sidebar-left-collapsed' ) ) {
-						$nano.nanoScroller();
-					}
-				})
-				.on( 'mouseleave', function() {
-					if ( $html.hasClass( 'sidebar-left-collapsed' ) ) {
-						$nano.nanoScroller();
-					}
-				});
-
 			return this;
 		},
 
@@ -209,12 +164,7 @@ window.theme = {};
 			this.sidebars.right.isOpened = $html.hasClass( 'sidebar-right-opened' );
 
 			if ( this.customScroll ) {
-				this.sidebars.right.$nano = this.sidebars.right.$el.find( '.nano' );
 
-				this.sidebars.right.$nano.nanoScroller({
-					alwaysVisible: true,
-					preventPageScrolling: true
-				});
 			}
 
 			return this;

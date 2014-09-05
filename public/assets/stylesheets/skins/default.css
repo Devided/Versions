@@ -288,7 +288,7 @@ html.no-overflowscrolling .nano > .nano-pane > .nano-slider {
 /* Layout Boxed - small than min-width */
 @media only screen and (max-width: 1199px) {
 	html.boxed .header {
-		border-top-color: #fb6101;
+        border-top: 3px solid #fb6101;
 	}
 }
 /* Layout Boxed - larger or equal min width */
