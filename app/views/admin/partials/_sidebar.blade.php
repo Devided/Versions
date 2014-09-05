@@ -16,9 +16,8 @@
                     </li>
                     <li>
                         <a href="mailbox-folder.html">
-                            <span class="pull-right label label-primary">182</span>
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <span>Mailbox</span>
+                            <i class="fa fa-hdd-o" aria-hidden="true"></i>
+                            <span>Applications</span>
                         </a>
                     </li>
                 </ul>
