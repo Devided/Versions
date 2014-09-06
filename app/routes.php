@@ -48,11 +48,3 @@ Route::group(array('before' => 'auth'), function()
 
 Route::get('/api/{id}/js', 'APIController@js');
 Route::get('/api/{id}/css', 'APIController@css');
-
-Route::get('/create', function(){
-    $user = new User;
-    $user->username = 'jerre';
-    $user->email = 'jerre.bau@gmail.com';
-    $user->password = Hash::make('test');
-    $user->save();
-});
