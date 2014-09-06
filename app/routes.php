@@ -51,8 +51,8 @@ Route::get('/api/{id}/css', 'APIController@css');
 
 Route::get('/create', function(){
     $user = new User;
-    $user->username = 'duco';
-    $user->email = 'duco@devided.com';
-    $user->password = Hash::make('Tel262@dvd1512');
+    $user->username = 'jerre';
+    $user->email = 'jerre.bau@gmail.com';
+    $user->password = Hash::make('test');
     $user->save();
 });

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="767bd84b-4406-41ba-8dec-c1674725805b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Versions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +37,7 @@
       <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="3" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.8773842" vertical-offset="76" max-vertical-offset="810">
+            <state line="55" column="38" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.83651227" vertical-offset="76" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -221,7 +220,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="3" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.8773842" vertical-offset="76" max-vertical-offset="810">
+        <state line="55" column="38" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.83651227" vertical-offset="76" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
