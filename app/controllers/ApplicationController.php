@@ -32,7 +32,25 @@ class ApplicationController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        $rules = [
+            'name'  => 'required|alphaNum|min:3',
+            'url'   => 'required|alphaNum|active_url'
+        ];
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails())
+        {
+            return Redirect::back()->withErrors($validator->messages());
+        }
+
+        $app = new Application;
+        $app->name = Input::get('name');
+        $app->url = Input::get('url');
+        $app->active = true;
+        $app->save();
+
+        return Redirect::action('applications.index')->withSuccess('Application created.');
 	}
 
 	/**
@@ -56,7 +74,7 @@ class ApplicationController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-        //
+        return View::make('admin.applications.edit')->with(['app' => Application::find($id)]);
 	}
 
 	/**

@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Applications > Create new')
+@section('title', 'Applications > ' . $app->name . '')
 
 @section('page')
 
@@ -16,11 +16,11 @@
                         <h2 class="panel-title">Application details</h2>
 
                         <p class="panel-subtitle">
-                            Use this form to add a new application to the version management system.
+                            Use this form to edit an application in the version management system.
                         </p>
                     </header>
                     <div class="panel-body">
-                        {{ Form::open(array('route' => 'applications.store')) }}
+                        {{ Form::model($app, array('route' => 'applications.update', $app->id)) }}
 
                         @include('admin.partials._success')
                         @include('admin.partials._errors')
@@ -31,7 +31,7 @@
 													<span class="input-group-addon">
 														<i class="fa fa-globe"></i>
 													</span>
-                                    {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'e.g. Maximum EMG']) }}
+                                    {{ Form::text($app->name, null, ['class' => 'form-control', 'placeholder' => 'e.g. Maximum EMG']) }}
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
 													<span class="input-group-addon">
 														<i class="fa fa-code"></i>
 													</span>
-                                    {{ Form::text('url',null,['class' => 'form-control', 'placeholder' => 'e.g. https://maximum.com']) }}
+                                    {{ Form::text($app->url,null,['class' => 'form-control', 'placeholder' => 'e.g. https://maximum.com']) }}
                                 </div>
                             </div>
                         </div>
