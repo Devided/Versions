@@ -13,9 +13,13 @@
         <section class="panel">
             <header class="panel-heading">
                 <div class="panel-actions">
-                    <button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button>
+                    <a href="{{ action('applications.create') }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
                 </div>
                 <h2 class="panel-title">Applications</h2>
+
+                <p class="panel-subtitle">
+                    An overview of all the applications in the version management system.
+                </p>
             </header>
             <div class="panel-body">
                 <div class="table-responsive">
@@ -56,7 +60,9 @@
                     </table>
                 </div>
             </div>
-            {{ $applications->links() }}
+            <div class="pull-right">
+                {{ $applications->links() }}
+            </div>
         </section>
     </div>
 </div>

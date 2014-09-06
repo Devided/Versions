@@ -10,7 +10,7 @@ class ApplicationController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('admin.applications')->with('applications', Application::paginate('10'));
+		return View::make('admin.applications.index')->with('applications', Application::paginate('10'));
 	}
 
 	/**
@@ -21,7 +21,7 @@ class ApplicationController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('admin.applications.create');
 	}
 
 	/**
@@ -85,7 +85,7 @@ class ApplicationController extends \BaseController {
         $app->url = Input::get('url');
         $app->save();
 
-        return Redirect::back()->withSuccess('Application saved!');
+        return Redirect::back()->withSuccess('Application saved.');
 	}
 
 	/**
@@ -100,7 +100,7 @@ class ApplicationController extends \BaseController {
 		$app = Application::find($id);
         $app->delete();
 
-        return Redirect::back()->withSuccess('Application removed!');
+        return Redirect::back()->withSuccess('Application removed.');
 	}
 
 
@@ -117,9 +117,9 @@ class ApplicationController extends \BaseController {
 
         $app->active = !$app->active;
 
-        if(!$app->save()) { Redirect::back()->withErrors('Try again..'); }
+        if(!$app->save()) { Redirect::back()->withErrors('Error, please try again.'); }
 
-        return Redirect::back()->withSuccess('Application status switched');
+        return Redirect::back()->withSuccess('Application status switched.');
     }
 
 }
