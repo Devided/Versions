@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="767bd84b-4406-41ba-8dec-c1674725805b" name="Default" comment="" />
+    <list default="true" id="767bd84b-4406-41ba-8dec-c1674725805b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
+    </list>
     <ignored path="Versions.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/applications/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="80" selection-start="109" selection-end="109" vertical-scroll-proportion="0.04225352" vertical-offset="0" max-vertical-offset="1065">
+            <state line="2" column="80" selection-start="109" selection-end="109" vertical-scroll-proportion="11.875" vertical-offset="315" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -50,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="78" selection-start="1926" selection-end="1926" vertical-scroll-proportion="-25.833334" vertical-offset="10" max-vertical-offset="720">
+            <state line="61" column="20" selection-start="2131" selection-end="2131" vertical-scroll-proportion="0.85211265" vertical-offset="175" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -122,11 +124,11 @@
         <option value="$PROJECT_DIR$/app/views/admin/partials/_success.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ApplicationController.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/admin/applications/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/applications/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/applications/show.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/applications/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
       </list>
     </option>
   </component>
@@ -527,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="78" selection-start="1926" selection-end="1926" vertical-scroll-proportion="-25.833334" vertical-offset="10" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="68" selection-start="2012" selection-end="2154" vertical-scroll-proportion="-20.208334" vertical-offset="175" max-vertical-offset="885">
@@ -564,7 +559,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/applications/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="80" selection-start="109" selection-end="109" vertical-scroll-proportion="0.04225352" vertical-offset="0" max-vertical-offset="1065">
+        <state line="2" column="80" selection-start="109" selection-end="109" vertical-scroll-proportion="11.875" vertical-offset="315" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="20" selection-start="2131" selection-end="2131" vertical-scroll-proportion="0.85211265" vertical-offset="175" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
