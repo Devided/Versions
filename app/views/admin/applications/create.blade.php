@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Applications > Create new')
+@section('title', HTML::linkAction('ApplicationController@index','Applications') . ' > Create new')
 
 @section('page')
 
@@ -22,8 +22,6 @@
                     <div class="panel-body">
                         {{ Form::open(array('route' => 'applications.store')) }}
 
-                        @include('admin.partials._success')
-                        @include('admin.partials._errors')
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">

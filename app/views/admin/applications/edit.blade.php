@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Applications > ' . $app->name . '')
+@section('title', HTML::linkAction('ApplicationController@index','Applications') . ' > ' . HTML::linkAction('ApplicationController@show',$app->name,[$app->id]) . ' > edit')
 
 @section('page')
 
@@ -22,8 +22,6 @@
                     <div class="panel-body">
                         {{ Form::model($app, array('route' => 'applications.update', $app->id)) }}
 
-                        @include('admin.partials._success')
-                        @include('admin.partials._errors')
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">

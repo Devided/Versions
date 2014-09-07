@@ -48,5 +48,5 @@ Route::group(array('before' => 'auth'), function()
     Route::get('/logout', ['uses' => 'SessionsController@destroy','as' => 'admin.logout']);
 });
 
-Route::get('/api/{id}/js', 'APIController@js');
-Route::get('/api/{id}/css', 'APIController@css');
+Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
+Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);

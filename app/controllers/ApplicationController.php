@@ -62,7 +62,8 @@ class ApplicationController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+        if($app = Application::find($id))
+            return View::make('admin.applications.show')->with(['app' => Application::find($id)]);
 	}
 
 	/**
@@ -74,7 +75,8 @@ class ApplicationController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-        return View::make('admin.applications.edit')->with(['app' => Application::find($id)]);
+        if($app = Application::find($id))
+            return View::make('admin.applications.edit')->with(['app' => Application::find($id)]);
 	}
 
 	/**

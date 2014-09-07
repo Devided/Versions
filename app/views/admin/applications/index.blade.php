@@ -42,7 +42,7 @@
                                     {{ Form::open(['method' => 'PATCH', 'action' => ['applications.switch', $app->id], 'id' => 'switch'.$app->id]) }}
                                         <a href="#" onclick="$('#switch{{$app->id}}').submit()">
                                     @if($app->active)
-                                        <span class="text-succes"><i class="fa fa-circle"></i> Active</span>
+                                        <span class="text-success"><i class="fa fa-circle"></i> Active</span>
                                     @else
                                         <span class="text-danger"><i class="fa fa-circle"></i> Inactive</span>
                                     @endif
@@ -50,7 +50,7 @@
                                         {{ Form::close() }}
                                     </td>
                                     <td class="actions">
-                                        <a href=""><span class="text-warning"><i class="fa fa-pencil"></i></span></a>
+                                        {{ HTML::decode(HTML::linkAction('ApplicationController@show', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$app->id])) }}
                                         <a href="#modalDelete" onclick="setupDeleteModal('{{{ $app->name }}}', '{{{ action('applications.index') }}}/{{ $app->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>
                                     </td>
                                 </tr>
