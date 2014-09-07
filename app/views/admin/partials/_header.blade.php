@@ -1,7 +1,7 @@
 <header class="header">
     <div class="logo-container">
-        <a href="/" class="logo">
-            <img src="assets/images/logo.png" height="35" alt="Porto Admin" />
+        <a href="{{ action('dashboard') }}" class="logo">
+            <img src="{{ asset('assets/images/logo.png') }}" height="35">
         </a>
         <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
             <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -60,7 +60,7 @@
                     <img src="http://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) ) }}" alt="{{ Auth::user()->username }}" class="img-circle" data-lock-picture="http://www.gravatar.com/avatar/{{ md5( strtolower( trim( Auth::user()->email ) ) ) }}" />
                 </figure>
                 <div class="profile-info" data-lock-name="{{ Auth::user()->username }}" data-lock-email="{{ Auth::user()->email }}">
-                    <span class="name">{{ Auth::user()->username }}</span>
+                    <span class="name">{{ ucfirst(Auth::user()->username) }}</span>
                     <span class="role">{{ Auth::user()->email }}</span>
                 </div>
 

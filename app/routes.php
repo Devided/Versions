@@ -39,6 +39,8 @@ Route::group(array('before' => 'auth'), function()
     ]);
 
     Route::resource('/applications', 'ApplicationController');
+    Route::post('/applications', ['as' => 'applications.store', 'uses' => 'ApplicationController@store', 'before' => 'csrf']);
+    Route::patch('/applications/{id}', ['uses' => 'ApplicationController@update', 'as' => 'applications.update', 'before' => 'csrf'] );
     Route::patch('/applications/switch/{id}', ['uses' => 'ApplicationController@status', 'as' => 'applications.switch', 'before' => 'csrf'] );
     Route::resource('/plugin', 'PluginController');
     Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
@@ -46,5 +48,5 @@ Route::group(array('before' => 'auth'), function()
     Route::get('/logout', ['uses' => 'SessionsController@destroy','as' => 'admin.logout']);
 });
 
-Route::get('/api/{id}/js', 'APIController@js');
-Route::get('/api/{id}/css', 'APIController@css');
+Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
+Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);
