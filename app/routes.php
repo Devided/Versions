@@ -50,14 +50,3 @@ Route::group(array('before' => 'auth'), function()
 
 Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
 Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);
-
-//temp
-Route::get('/create', function(){
-    $app = new Application;
-    $app->name = 'testApp';
-    $app->url = 'http://google.com';
-    $app->active = true;
-
-    if($app->save())
-        return 'ok';
-});
