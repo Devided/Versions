@@ -92,12 +92,12 @@
                     <div class="panel-body">
                         <p>CSS<br />
                             <code>
-                                &lt;link rel="stylesheet" type="text/css" href="{{ action('api.css',[$app->id]) }}"&gt;
+                                &lt;link rel="stylesheet" type="text/css" href="{{ action('api.css',[($app->id * 50 + 4295)]) }}"&gt;
                             </code>
                         </p>
                         <p>Javascript<br />
                             <code>
-                                &lt;script src="{{ action('api.js',[$app->id]) }}"&gt;
+                                &lt;script src="{{ action('api.js',[($app->id * 50 + 4295)]) }}"&gt;
                             </code>
                         </p>
                     </div>

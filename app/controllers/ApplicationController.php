@@ -50,7 +50,7 @@ class ApplicationController extends \BaseController {
         $app->active = true;
         $app->save();
 
-        return Redirect::action('applications.index')->withSuccess('Application created.');
+        return Redirect::action('applications.show',[$app->id])->withSuccess('Application created.');
 	}
 
 	/**
