@@ -35,7 +35,7 @@
                         <tbody>
                         @foreach($plugins as $plugin)
 
-                        <tr @if($plugin->thread() == 'High') style="border-top: 2px solid rgba(210, 50, 45, 0.25) !important; border-bottom: 2px solid rgba(210, 50, 45, 0.25); background:rgba(210, 50, 45, 0.05);" @endif>
+                        <tr @if($plugin->thread() == 'High') style="border-top: 2px solid rgba(210, 50, 45, 0.01); border-bottom:2px solid rgba(210, 50, 45, 0.01); border-left: 3px solid rgba(210, 50, 45, 1) !important; background:rgba(210, 50, 45, 0.05);" @endif>
                             <td>{{{ $plugin->name }}}</td>
 
                             @if($plugin->version_name() != 'Unknown')

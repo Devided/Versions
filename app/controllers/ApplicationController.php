@@ -34,7 +34,7 @@ class ApplicationController extends \BaseController {
 	{
         $rules = [
             'name'  => 'required|alphaNum|min:3',
-            'url'   => 'required|alphaNum|active_url'
+            'url'   => 'required|active_url'
         ];
 
         $validator = Validator::make(Input::all(), $rules);
@@ -64,7 +64,9 @@ class ApplicationController extends \BaseController {
 	{
         if($app = Application::find($id))
             return View::make('admin.applications.show')->with(['app' => Application::find($id)]);
-	}
+        else
+            return Redirect::action('applications.index')->withErrors(['Application does not exist.']);
+    }
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -77,6 +79,8 @@ class ApplicationController extends \BaseController {
 	{
         if($app = Application::find($id))
             return View::make('admin.applications.edit')->with(['app' => Application::find($id)]);
+        else
+            return Redirect::action('applications.index')->withErrors(['Application does not exist.']);
 	}
 
 	/**
@@ -105,7 +109,7 @@ class ApplicationController extends \BaseController {
         $app->url = Input::get('url');
         $app->save();
 
-        return Redirect::back()->withSuccess('Application saved.');
+        return Redirect::action('applications.show',[$id])->withSuccess('Application settings saved.');
 	}
 
 	/**

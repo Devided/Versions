@@ -47,7 +47,7 @@ class PluginController extends \BaseController {
         $plugin->name = Input::get('name');
         $plugin->save();
 
-        return Redirect::action('plugins.index')->withSuccess('Plugin created.');
+        return Redirect::action('plugin.index')->withSuccess('Plugin created.');
     }
 
 	/**

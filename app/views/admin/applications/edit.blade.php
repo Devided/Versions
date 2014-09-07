@@ -10,7 +10,6 @@
         @include('admin.partials._success')
 
         <div class="col-md-12">
-            <form id="form2" class="form-horizontal form-bordered">
                 <section class="panel">
                     <header class="panel-heading">
                         <h2 class="panel-title">Application details</h2>
@@ -20,7 +19,7 @@
                         </p>
                     </header>
                     <div class="panel-body">
-                        {{ Form::model($app, array('route' => 'applications.update', $app->id)) }}
+                        {{ Form::model($app, ['route' => ['applications.update',$app->id], 'method' => 'PUT']) }}
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>
@@ -29,7 +28,7 @@
 													<span class="input-group-addon">
 														<i class="fa fa-globe"></i>
 													</span>
-                                    {{ Form::text($app->name, null, ['class' => 'form-control', 'placeholder' => 'e.g. Maximum EMG']) }}
+                                    {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'e.g. Maximum EMG']) }}
                                 </div>
                             </div>
                         </div>
@@ -40,7 +39,7 @@
 													<span class="input-group-addon">
 														<i class="fa fa-code"></i>
 													</span>
-                                    {{ Form::text($app->url,null,['class' => 'form-control', 'placeholder' => 'e.g. https://maximum.com']) }}
+                                    {{ Form::text('url',null,['class' => 'form-control', 'placeholder' => 'e.g. https://maximum.com']) }}
                                 </div>
                             </div>
                         </div>
@@ -55,11 +54,10 @@
                         </div>
                     </div>
                     <footer class="panel-footer">
-                        {{ Form::button('Add', ['class' => 'btn btn-primary', 'type' => 'submit']) }}
+                        {{ Form::button('Save', ['class' => 'btn btn-primary', 'type' => 'submit']) }}
                     </footer>
                     {{ Form::close() }}
                 </section>
-            </form>
         </div>
     </div>
 </div>

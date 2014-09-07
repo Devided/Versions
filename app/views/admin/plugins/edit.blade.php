@@ -19,7 +19,7 @@
                         </p>
                     </header>
                     <div class="panel-body">
-                        {{ Form::model($plugin, ['route' => ['plugin.update', $plugin->id] ]) }}
+                        {{ Form::model($plugin, ['route' => ['plugin.update', $plugin->id], 'method' => 'PUT']) }}
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>
@@ -28,13 +28,13 @@
 													<span class="input-group-addon">
 														<i class="fa fa-globe"></i>
 													</span>
-                                    {{ Form::text($plugin->name, null, ['class' => 'form-control', 'placeholder' => 'e.g. Maximum EMG']) }}
+                                    {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'e.g. jQuery']) }}
                                 </div>
                             </div>
                         </div>
                     </div>
                     <footer class="panel-footer">
-                        {{ Form::button('Add', ['class' => 'btn btn-primary', 'type' => 'submit']) }}
+                        {{ Form::button('Save', ['class' => 'btn btn-primary', 'type' => 'submit']) }}
                     </footer>
                     {{ Form::close() }}
                 </section>
