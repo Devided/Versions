@@ -35,7 +35,7 @@
                 <section class="panel">
                     <header class="panel-heading">
                         <div class="panel-actions">
-                            <a href="{{ action('applications.create') }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
+                            <a href="{{ action('applications.edit',[$app->id]) }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-edit"></i> Edit</button></a>
                         </div>
 
                         <h2 class="panel-title">Application details</h2>

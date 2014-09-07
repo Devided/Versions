@@ -10,7 +10,6 @@
         @include('admin.partials._success')
 
         <div class="col-md-12">
-            <form id="form2" class="form-horizontal form-bordered">
                 <section class="panel">
                     <header class="panel-heading">
                         <h2 class="panel-title">Application details</h2>
@@ -20,7 +19,7 @@
                         </p>
                     </header>
                     <div class="panel-body">
-                        {{ Form::open(array('route' => 'applications.store')) }}
+                        {{ Form::open(['route' => 'applications.store']) }}
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>
@@ -58,8 +57,7 @@
                         {{ Form::button('Add', ['class' => 'btn btn-primary', 'type' => 'submit']) }}
                     </footer>
                     {{ Form::close() }}
-                </section>
-            </form>
+            </section>
         </div>
     </div>
 </div>
