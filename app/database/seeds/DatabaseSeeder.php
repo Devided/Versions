@@ -2,6 +2,17 @@
 
 class DatabaseSeeder extends Seeder {
 
+     protected $tables = [
+        'users', 'applications', 'plugins', 'versions'
+     ];
+
+     protected $seeders = [
+        'UsersTableSeeder',
+        'ApplicationsTableSeeder',
+        'PluginsTableSeeder',
+        'VersionsTableSeeder'
+     ];
+
 	/**
 	 * Run the database seeds.
 	 *
@@ -11,8 +22,24 @@ class DatabaseSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-		$this->call('UsersTableSeeder');
-        $this->call('ApplicationsTableSeeder');
+        $this->cleanDatabase();
+
+		foreach($this->seeders as $seeder)
+        {
+            $this->call($seeder);
+        }
 	}
+
+    private function cleanDatabase()
+    {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+
+        foreach($this->tables as $table)
+        {
+            DB::table($table)->truncate();
+        }
+
+        DB::statement('SET FOREIGN_KEY_CHECKS=1');
+    }
 
 }

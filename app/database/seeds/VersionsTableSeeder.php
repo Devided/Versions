@@ -13,9 +13,9 @@ class VersionsTableSeeder extends Seeder {
 		foreach(range(1, 10) as $index)
 		{
 			Version::create([
-                'name' => $faker->randomDigit,
+                'name' => $faker->randomFloat(2, 0, 9),
                 'risk' => rand(0,3),
-                'plugin_id' => $plugins[$i]
+                'plugin_id' => $faker->randomElement($plugins)
 			]);
 		}
 	}
