@@ -8,16 +8,19 @@ class VersionsTableSeeder extends Seeder {
 	public function run()
 	{
 		$faker = Faker::create();
-        $plugins = Plugin::lists('id');
+        $plugins = Plugin::all();
 
-		foreach(range(1, 10) as $index)
-		{
-			Version::create([
-                'name' => $faker->randomFloat(2, 0, 9),
-                'risk' => rand(0,3),
-                'plugin_id' => $faker->randomElement($plugins)
-			]);
-		}
+        foreach($plugins as $plugin)
+        {
+            foreach(range(1, rand(2,10)) as $index)
+            {
+                Version::create([
+                    'name' => $faker->randomFloat(2, 0, 9),
+                    'risk' => rand(0,3),
+                    'plugin_id' => $plugin->id
+                ]);
+            }
+        }
 	}
 
 }

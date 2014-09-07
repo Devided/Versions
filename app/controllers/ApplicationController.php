@@ -90,7 +90,7 @@ class ApplicationController extends \BaseController {
 	{
         $rules = [
             'name'  => 'required|alphaNum|min:3',
-            'url'   => 'required|alphaNum|active_url'
+            'url'   => 'required|active_url'
         ];
 
         $validator = Validator::make(Input::all(), $rules);

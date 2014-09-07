@@ -20,6 +20,12 @@
                             <span>Applications</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ action('plugin.index') }}">
+                            <i class="fa fa-cubes" aria-hidden="true"></i>
+                            <span>Plugins</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>

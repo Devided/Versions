@@ -1,32 +1,32 @@
 <?php
 
-class PluginController extends \BaseController {
+class VersionController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /plugin
+	 * GET /version
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-        return View::make('admin.plugins.index')->with('plugins', Plugin::paginate('10'));
+		//
 	}
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /plugin/create
+	 * GET /version/create
 	 *
 	 * @return Response
 	 */
-    public function create()
-    {
-        return View::make('admin.plugins.create');
-    }
+	public function create()
+	{
+		return View::make('admin.plugins.create');
+	}
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /plugin
+	 * POST /version
 	 *
 	 * @return Response
 	 */
@@ -34,6 +34,7 @@ class PluginController extends \BaseController {
     {
         $rules = [
             'name'  => 'required|alphaNum|min:3',
+            'url'   => 'required|alphaNum|active_url'
         ];
 
         $validator = Validator::make(Input::all(), $rules);
@@ -43,16 +44,18 @@ class PluginController extends \BaseController {
             return Redirect::back()->withErrors($validator->messages());
         }
 
-        $plugin = new Plugin;
-        $plugin->name = Input::get('name');
-        $plugin->save();
+        $app = new Application;
+        $app->name = Input::get('name');
+        $app->url = Input::get('url');
+        $app->active = true;
+        $app->save();
 
-        return Redirect::action('plugins.index')->withSuccess('Plugin created.');
+        return Redirect::action('applications.index')->withSuccess('Application created.');
     }
 
 	/**
 	 * Display the specified resource.
-	 * GET /plugin/{id}
+	 * GET /version/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -67,7 +70,7 @@ class PluginController extends \BaseController {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /plugin/{id}/edit
+	 * GET /version/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -75,51 +78,31 @@ class PluginController extends \BaseController {
     public function edit($id)
     {
         if($plugin = Plugin::find($id))
-        {
-            return View::make('admin.plugins.edit')->with(['plugin' => Plugin::find($id)]);
-        }
+            return View::make('admin.applications.edit')->with(['app' => Application::find($id)]);
     }
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /plugin/{id}
+	 * PUT /version/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
-    public function update($id)
-    {
-        $rules = [
-            'name'  => 'required|alphaNum|min:3',
-        ];
-
-        $validator = Validator::make(Input::all(), $rules);
-
-        if($validator->fails())
-        {
-            return Redirect::back()->withErrors($validator->messages());
-        }
-
-        $plugin = Plugin::find($id);
-        $plugin->name = Input::get('name');
-        $plugin->save();
-
-        return Redirect::back()->withSuccess('Plugin saved.');
-    }
+	public function update($id)
+	{
+		//
+	}
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /plugin/{id}
+	 * DELETE /version/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function destroy($id)
 	{
-        $plugin = Plugin::find($id);
-        $plugin->delete();
-
-        return Redirect::back()->withSuccess('Plugin removed.');
+		//
 	}
 
 }
