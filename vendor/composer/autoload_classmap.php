@@ -1782,6 +1782,7 @@ return array(
     'System_SSH_Agent_Identity' => $vendorDir . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
     'TestCase' => $baseDir . '/app/tests/TestCase.php',
     'UpdateApplicationsTable' => $baseDir . '/app/database/migrations/2014_09_03_151457_update_applications_table.php',
+    'UpdatePluginsTable' => $baseDir . '/app/database/migrations/2014_09_08_141236_update_plugins_table.php',
     'UpdateUsersTable' => $baseDir . '/app/database/migrations/2014_09_03_153712_update_users_table.php',
     'User' => $baseDir . '/app/models/User.php',
     'UsersTableSeeder' => $baseDir . '/app/database/seeds/UsersTableSeeder.php',
