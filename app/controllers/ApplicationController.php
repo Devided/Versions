@@ -47,7 +47,6 @@ class ApplicationController extends \BaseController {
         $app = new Application;
         $app->name = Input::get('name');
         $app->url = Input::get('url');
-        $app->active = true;
         $app->save();
 
         return Redirect::action('applications.show',[$app->id])->withSuccess('Application created.');
