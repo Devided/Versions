@@ -49,3 +49,10 @@ Route::group(array('before' => 'auth'), function()
 
 Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
 Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);
+
+// Iron MQ Push Queues
+// REMEMBER TO UPDATE QUEUE SUBSCRIPTION TO DOMAIN PATH
+Route::post('iron/receive', function()
+{
+    return Queue::marshal();
+});
