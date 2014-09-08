@@ -27,18 +27,16 @@
                         <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Version</th>
-                            <th>Risk</th>
+                            <th>Documentation</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($plugins as $plugin)
 
-                        <tr @if($plugin->thread() == 'High') class="blinkRed blinkRedClass" @endif>
+                        <tr>
                             <td>{{ HTML::linkAction('PluginController@show',$plugin->name,[$plugin->id]) }}</td>
-                            <td>{{{ $plugin->version_name() }}}</td>
-                            <td>@include('admin.partials._thread', ['thread' => $plugin->thread()])</td>
+                            <td>{{ HTML::link($plugin->docurl, null, ['target' => '_blank']) }}</td>
                             <td class="actions">
                                 {{ HTML::decode(HTML::linkAction('PluginController@show', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$plugin->id])) }}
                                 <a href="#modalDelete" onclick="setupDeleteModal('{{{ $plugin->name }}}', '{{{ action('plugin.index') }}}/{{ $plugin->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>

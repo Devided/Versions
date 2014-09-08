@@ -2,7 +2,7 @@
 
 class Plugin extends \Eloquent {
 
-	protected $fillable = ['name', 'thread'];
+	protected $fillable = ['name', 'docurl'];
 
     public function versions()
     {

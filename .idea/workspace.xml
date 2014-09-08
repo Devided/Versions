@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf64d616-8bea-48ef-88ef-0ac577739fe3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Plugin.php" afterPath="$PROJECT_DIR$/app/models/Plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PluginController.php" afterPath="$PROJECT_DIR$/app/controllers/PluginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/plugins/create.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/plugins/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/plugins/show.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/plugins/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Versions.iws" />
@@ -31,19 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php">
+      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="406" selection-end="406" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
+            <state line="41" column="57" selection-start="1901" selection-end="1907" vertical-scroll-proportion="-17.708334" vertical-offset="190" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_09_08_141236_update_plugins_table.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php">
+      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="600">
+            <state line="41" column="65" selection-start="1650" selection-end="1792" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Version.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Version.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="39" selection-start="143" selection-end="143" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -52,16 +60,16 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="103" selection-start="1470" selection-end="1470" vertical-scroll-proportion="-22.291666" vertical-offset="35" max-vertical-offset="1395">
+            <state line="48" column="22" selection-start="801" selection-end="2141" vertical-scroll-proportion="-24.166666" vertical-offset="140" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="56" selection-start="531" selection-end="531" vertical-scroll-proportion="-0.03521127" vertical-offset="280" max-vertical-offset="990">
+            <state line="17" column="56" selection-start="531" selection-end="531" vertical-scroll-proportion="1.0416666" vertical-offset="280" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -76,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PluginController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PluginController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/PluginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="39" selection-start="1008" selection-end="1008" vertical-scroll-proportion="19.208334" vertical-offset="1196" max-vertical-offset="1950">
+            <state line="108" column="33" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.5020747" vertical-offset="1257" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -139,12 +147,8 @@
         <option value="$PROJECT_DIR$/app/controllers/VersionController.php" />
         <option value="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Version.php" />
-        <option value="$PROJECT_DIR$/app/models/Plugin.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/VersionsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/views/admin/partials/_thread.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/plugins/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/PluginController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/config/queue.php" />
@@ -152,9 +156,13 @@
         <option value="$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/plugins/show.blade.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/models/Plugin.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/plugins/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/PluginController.php" />
       </list>
     </option>
   </component>
@@ -523,11 +531,6 @@
         <state line="63" column="10" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.47075605" vertical-offset="615" max-vertical-offset="1950" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="90" selection-end="90" vertical-scroll-proportion="0.08559201" vertical-offset="0" max-vertical-offset="701" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725" />
@@ -668,11 +671,6 @@
         <state line="24" column="49" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.52421653" vertical-offset="0" max-vertical-offset="1053" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Version.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="143" selection-end="143" vertical-scroll-proportion="0.1528965" vertical-offset="0" max-vertical-offset="1053" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/applications/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="30" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.5307692" vertical-offset="460" max-vertical-offset="2369" />
@@ -708,16 +706,6 @@
         <state line="0" column="0" selection-start="0" selection-end="3043" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1587" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.62868" vertical-offset="74" max-vertical-offset="1127" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="45" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.73789173" vertical-offset="51" max-vertical-offset="1127" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="3" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.8689459" vertical-offset="189" max-vertical-offset="1242">
@@ -742,41 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="406" selection-end="406" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="103" selection-start="1470" selection-end="1470" vertical-scroll-proportion="-22.291666" vertical-offset="35" max-vertical-offset="1395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="53" selection-start="1132" selection-end="1136" vertical-scroll-proportion="0.813278" vertical-offset="252" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PluginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="39" selection-start="1008" selection-end="1008" vertical-scroll-proportion="19.208334" vertical-offset="1196" max-vertical-offset="1950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="18" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="720">
@@ -786,7 +739,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="56" selection-start="531" selection-end="531" vertical-scroll-proportion="-0.03521127" vertical-offset="280" max-vertical-offset="990">
+        <state line="17" column="56" selection-start="531" selection-end="531" vertical-scroll-proportion="1.0416666" vertical-offset="280" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="1" selection-start="83" selection-end="83" vertical-scroll-proportion="0.082987554" vertical-offset="0" max-vertical-offset="723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="0.31120333" vertical-offset="0" max-vertical-offset="723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="22" selection-start="801" selection-end="2141" vertical-scroll-proportion="-24.166666" vertical-offset="140" max-vertical-offset="1365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Version.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="143" selection-end="143" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="80" selection-end="80" vertical-scroll-proportion="0.082987554" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="406" selection-end="406" vertical-scroll-proportion="0.26970956" vertical-offset="0" max-vertical-offset="723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="57" selection-start="1901" selection-end="1907" vertical-scroll-proportion="-17.708334" vertical-offset="190" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="65" selection-start="1650" selection-end="1792" vertical-scroll-proportion="-25.625" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PluginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="33" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.5020747" vertical-offset="1257" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>

@@ -45,6 +45,7 @@ class PluginController extends \BaseController {
 
         $plugin = new Plugin;
         $plugin->name = Input::get('name');
+        $plugin->docurl = Input::get('docurl');
         $plugin->save();
 
         return Redirect::action('plugin.show',[$plugin->id])->withSuccess('Plugin created.');
@@ -102,9 +103,10 @@ class PluginController extends \BaseController {
 
         $plugin = Plugin::find($id);
         $plugin->name = Input::get('name');
+        $plugin->docurl = Input::get('docurl');
         $plugin->save();
 
-        return Redirect::action('admin.plugins.show',[$plugin->id])->withSuccess('Plugin saved.');
+        return Redirect::action('plugin.show',[$plugin->id])->withSuccess('Plugin saved.');
     }
 
 	/**

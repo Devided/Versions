@@ -32,6 +32,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Documentation</label>
+                            <div class="col-sm-10">
+                                <div class="input-group mb-md">
+													<span class="input-group-addon">
+														<i class="fa fa-globe"></i>
+													</span>
+                                    {{ Form::text('docurl', null, ['class' => 'form-control', 'placeholder' => 'e.g. http://jquery.com/docs']) }}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <footer class="panel-footer">
                         {{ Form::button('Save', ['class' => 'btn btn-primary', 'type' => 'submit']) }}
