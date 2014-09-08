@@ -27,29 +27,18 @@
                         <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Current version</th>
-                            <th>Thread level</th>
+                            <th>Version</th>
+                            <th>Risk</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($plugins as $plugin)
 
-                        <tr @if($plugin->thread() == 'High') style="border-top: 2px solid rgba(210, 50, 45, 0.01); border-bottom:2px solid rgba(210, 50, 45, 0.01); border-left: 3px solid rgba(210, 50, 45, 1) !important; background:rgba(210, 50, 45, 0.05);" @endif>
+                        <tr @if($plugin->thread() == 'High') class="blinkRed blinkRedClass" @endif>
                             <td>{{{ $plugin->name }}}</td>
-
-                            @if($plugin->version_name() != 'Unknown')
-                                <td>{{{ $plugin->version_name() }}}</td>
-                            @else
-                                <td><em>{{{ $plugin->version_name() }}}</em></td>
-                            @endif
-
-                            @if($plugin->thread() != 'Unknown')
-                                <td>@include('admin.partials._thread', ['thread' => $plugin->thread()])</td>
-                            @else
-                                <td><em>{{ $plugin->thread() }}</em></td>
-                            @endif
-
+                            <td>{{{ $plugin->version_name() }}}</td>
+                            <td>@include('admin.partials._thread', ['thread' => $plugin->thread()])</td>
                             <td class="actions">
                                 {{ HTML::decode(HTML::linkAction('PluginController@show', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$plugin->id])) }}
                                 <a href="#modalDelete" onclick="setupDeleteModal('{{{ $plugin->name }}}', '{{{ action('plugin.index') }}}/{{ $plugin->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>

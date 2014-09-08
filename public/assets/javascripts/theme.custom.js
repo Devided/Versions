@@ -1,3 +1,7 @@
+setInterval(function(){
+   $('.blinkRed').toggleClass('blinkRedClass');
+},1500);
+
 $('.modal-delete').magnificPopup({
     type: 'inline',
 
@@ -34,3 +38,4 @@ function setupDeleteModal(name,deleteUrl){
     $('#modalDeleteName').text(name);
     $('#deleteForm').attr('action', deleteUrl);
 }
+

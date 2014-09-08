@@ -1,1 +1,4 @@
-/* Add here all your CSS customizations */
+.blinkRedClass {
+    border-left: 3px solid rgba(210, 50, 45, 1) !important;
+    background:rgba(210, 50, 45, 0.05);
+}
