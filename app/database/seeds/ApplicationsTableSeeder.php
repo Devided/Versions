@@ -13,7 +13,6 @@ class ApplicationsTableSeeder extends Seeder {
 		{
 			Application::create([
                 'name'      =>  $faker->word,
-                'active'    =>  rand(0,1),
                 'url'       =>  $faker->url
 			]);
 		}

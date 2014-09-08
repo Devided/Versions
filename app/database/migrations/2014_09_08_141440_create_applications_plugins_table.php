@@ -12,17 +12,17 @@ class CreateApplicationsPluginsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('applications_plugins', function(Blueprint $table)
+		Schema::create('applications_versions', function(Blueprint $table)
 		{
 			$table->integer('application_id')->unsigned();
-			$table->integer('plugin_id')->unsigned();
+			$table->integer('version_id')->unsigned();
 
             $table->foreign('application_id')
                 ->references('id')->on('applications')
                 ->onDelete('cascade');
 
-            $table->foreign('plugin_id')
-                ->references('id')->on('plugins')
+            $table->foreign('version_id')
+                ->references('id')->on('versions')
                 ->onDelete('cascade');
 		});
 	}
@@ -35,7 +35,7 @@ class CreateApplicationsPluginsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('applications_plugins');
+		Schema::drop('applications_versions');
 	}
 
 }
