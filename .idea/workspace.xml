@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf64d616-8bea-48ef-88ef-0ac577739fe3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.local.php" afterPath="$PROJECT_DIR$/.env.local.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Application.php" afterPath="$PROJECT_DIR$/app/models/Application.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Plugin.php" afterPath="$PROJECT_DIR$/app/models/Plugin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Versions.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".env.local.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env.local.php">
+      <file leaf-file-name="Plugin.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="137" selection-end="137" vertical-scroll-proportion="0.1965812" vertical-offset="0" max-vertical-offset="1053">
+            <state line="4" column="50" selection-start="88" selection-end="88" vertical-scroll-proportion="0.08736942" vertical-offset="0" max-vertical-offset="1610">
               <folding />
             </state>
           </provider>
@@ -100,10 +92,10 @@
         <option value="$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/PluginsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/models/Application.php" />
-        <option value="$PROJECT_DIR$/app/models/Plugin.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_142206_update_versions_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php" />
         <option value="$PROJECT_DIR$/.env.local.php" />
+        <option value="$PROJECT_DIR$/app/models/Plugin.php" />
       </list>
     </option>
   </component>
@@ -889,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="49" selection-start="175" selection-end="175" vertical-scroll-proportion="0.17473884" vertical-offset="0" max-vertical-offset="1610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
@@ -920,6 +905,13 @@
     <entry file="file://$PROJECT_DIR$/.env.local.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="2" selection-start="137" selection-end="137" vertical-scroll-proportion="0.1965812" vertical-offset="0" max-vertical-offset="1053">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="50" selection-start="88" selection-end="88" vertical-scroll-proportion="0.08736942" vertical-offset="0" max-vertical-offset="1610">
           <folding />
         </state>
       </provider>
