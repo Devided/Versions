@@ -29,6 +29,7 @@
                             <th>Name</th>
                             <th>Url</th>
                             <th>Status</th>
+                            <th>Risk</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
@@ -39,15 +40,14 @@
                                     <td>{{{ $app->name }}}</td>
                                     <td>{{ HTML::link($app->url,null,['target' => '_blank']) }}</td>
                                     <td>
-                                    {{ Form::open(['method' => 'PATCH', 'action' => ['applications.switch', $app->id], 'id' => 'switch'.$app->id]) }}
-                                        <a href="#" onclick="$('#switch{{$app->id}}').submit()">
                                     @if($app->active)
                                         <span class="text-success"><i class="fa fa-circle"></i> Active</span>
                                     @else
                                         <span class="text-danger"><i class="fa fa-circle"></i> Inactive</span>
                                     @endif
-                                        </a>
-                                        {{ Form::close() }}
+                                    </td>
+                                    <td>
+                                        <span class="text-success"><i class="fa fa-circle"></i> Ok</span>
                                     </td>
                                     <td class="actions">
                                         {{ HTML::decode(HTML::linkAction('ApplicationController@show', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$app->id])) }}

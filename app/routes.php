@@ -41,7 +41,6 @@ Route::group(array('before' => 'auth'), function()
     Route::resource('/applications', 'ApplicationController');
     Route::post('/applications', ['as' => 'applications.store', 'uses' => 'ApplicationController@store', 'before' => 'csrf']);
     Route::patch('/applications/{id}', ['uses' => 'ApplicationController@update', 'as' => 'applications.update', 'before' => 'csrf'] );
-    Route::patch('/applications/switch/{id}', ['uses' => 'ApplicationController@status', 'as' => 'applications.switch', 'before' => 'csrf'] );
     Route::resource('/plugin', 'PluginController');
     Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
     Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings', 'before' => 'csrf']);
