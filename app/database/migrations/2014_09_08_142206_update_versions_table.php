@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateApplicationsPluginsTable extends Migration {
+class UpdateVersionsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,8 @@ class CreateApplicationsPluginsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('applications_plugins', function(Blueprint $table)
+		Schema::table('versions', function(Blueprint $table)
 		{
-			$table->integer('application_id')->unsigned();
-			$table->integer('plugin_id')->unsigned();
-
-            $table->foreign('application_id')
-                ->references('id')->on('applications')
-                ->onDelete('cascade');
-
             $table->foreign('plugin_id')
                 ->references('id')->on('plugins')
                 ->onDelete('cascade');
@@ -35,7 +28,10 @@ class CreateApplicationsPluginsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('applications_plugins');
+		Schema::table('versions', function(Blueprint $table)
+		{
+			
+		});
 	}
 
 }

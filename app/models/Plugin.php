@@ -4,6 +4,11 @@ class Plugin extends \Eloquent {
 
 	protected $fillable = ['name', 'thread'];
 
+    public function applications()
+    {
+        return $this->belongsToMany('Applications');
+    }
+
     public function versions()
     {
         return $this->hasMany('Version');

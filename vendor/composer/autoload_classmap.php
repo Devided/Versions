@@ -1785,6 +1785,7 @@ return array(
     'UpdateApplicationsTable' => $baseDir . '/app/database/migrations/2014_09_03_151457_update_applications_table.php',
     'UpdatePluginsTable' => $baseDir . '/app/database/migrations/2014_09_08_141236_update_plugins_table.php',
     'UpdateUsersTable' => $baseDir . '/app/database/migrations/2014_09_03_153712_update_users_table.php',
+    'UpdateVersionsTable' => $baseDir . '/app/database/migrations/2014_09_08_142206_update_versions_table.php',
     'User' => $baseDir . '/app/models/User.php',
     'UsersTableSeeder' => $baseDir . '/app/database/seeds/UsersTableSeeder.php',
     'Version' => $baseDir . '/app/models/Version.php',

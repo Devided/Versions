@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf64d616-8bea-48ef-88ef-0ac577739fe3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.local.php" afterPath="$PROJECT_DIR$/.env.local.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Application.php" afterPath="$PROJECT_DIR$/app/models/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Plugin.php" afterPath="$PROJECT_DIR$/app/models/Plugin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-<<<<<<< HEAD
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/plugins/show.blade.php" afterPath="$PROJECT_DIR$/app/views/admin/plugins/show.blade.php" />
->>>>>>> 9f8925b44d31eb5517932de5a32d27b78cd7cad7
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Versions.iws" />
@@ -34,71 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
-      <file leaf-file-name="Application.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/Application.php">
+      <file leaf-file-name=".env.local.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env.local.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="46" selection-start="88" selection-end="88" vertical-scroll-proportion="0.06552707" vertical-offset="0" max-vertical-offset="1053">
-=======
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="406" selection-end="406" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014_09_08_141236_update_plugins_table.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="103" selection-start="1470" selection-end="1470" vertical-scroll-proportion="-22.291666" vertical-offset="35" max-vertical-offset="1395">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="56" selection-start="531" selection-end="531" vertical-scroll-proportion="-0.03521127" vertical-offset="280" max-vertical-offset="990">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PluginController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/PluginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="39" selection-start="1008" selection-end="1008" vertical-scroll-proportion="19.208334" vertical-offset="1196" max-vertical-offset="1950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="289" selection-end="289" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="735">
->>>>>>> 9f8925b44d31eb5517932de5a32d27b78cd7cad7
+            <state line="9" column="2" selection-start="137" selection-end="137" vertical-scroll-proportion="0.1965812" vertical-offset="0" max-vertical-offset="1053">
               <folding />
             </state>
           </provider>
@@ -137,6 +75,7 @@
         <option value="$PROJECT_DIR$/public/assets/javascripts/theme.js" />
         <option value="$PROJECT_DIR$/app/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/javascripts/modals.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/partials/_header.blade.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/ApplicationsTableSeeder.php" />
@@ -147,35 +86,31 @@
         <option value="$PROJECT_DIR$/app/controllers/VersionController.php" />
         <option value="$PROJECT_DIR$/app/views/admin/partials/_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Version.php" />
-        <option value="$PROJECT_DIR$/app/models/Plugin.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/VersionsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/views/admin/partials/_thread.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/plugins/show.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/admin/plugins/create.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/PluginController.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/config/queue.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/database/seeds/PluginsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php" />
         <option value="$PROJECT_DIR$/app/models/Application.php" />
-=======
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/plugins/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/plugins/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
->>>>>>> 9f8925b44d31eb5517932de5a32d27b78cd7cad7
+        <option value="$PROJECT_DIR$/app/models/Plugin.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_142206_update_versions_table.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php" />
+        <option value="$PROJECT_DIR$/.env.local.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -218,6 +153,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,6 +338,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="applications" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -407,6 +422,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -429,6 +466,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artdarek" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pusherer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -441,7 +548,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mega" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -492,7 +599,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -500,7 +607,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20989583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -532,19 +639,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_03_150045_create_applications_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.7522124" vertical-offset="0" max-vertical-offset="678" />
-      </provider>
-    </entry>
-=======
->>>>>>> 9f8925b44d31eb5517932de5a32d27b78cd7cad7
-    <entry file="file://$PROJECT_DIR$/app/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="10" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.47075605" vertical-offset="615" max-vertical-offset="1950" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="725" />
@@ -578,11 +672,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="4" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="480" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="121" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="225" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/SettingController.php">
@@ -635,15 +724,9 @@
         <state line="1452" column="37" selection-start="30924" selection-end="30924" vertical-scroll-proportion="-7.5925927" vertical-offset="21575" max-vertical-offset="229695" />
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.8252612" vertical-offset="28" max-vertical-offset="1081" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/ApplicationsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="44" selection-start="289" selection-end="289" vertical-scroll-proportion="0.305793" vertical-offset="0" max-vertical-offset="1053" />
->>>>>>> 9f8925b44d31eb5517932de5a32d27b78cd7cad7
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/javascripts/theme.custom.js">
@@ -716,6 +799,11 @@
         <state line="0" column="0" selection-start="0" selection-end="3043" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1587" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PluginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="39" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.104463436" vertical-offset="1017" max-vertical-offset="2990" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="30" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.62868" vertical-offset="74" max-vertical-offset="1127" />
@@ -724,6 +812,18 @@
     <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="45" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.73789173" vertical-offset="51" max-vertical-offset="1127" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="178" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.6855769" vertical-offset="138" max-vertical-offset="2392" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="73" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.34903845" vertical-offset="396" max-vertical-offset="1656">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
@@ -735,66 +835,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/queue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="504" selection-end="504" vertical-scroll-proportion="-0.28395063" vertical-offset="690" max-vertical-offset="2093" />
+        <state line="17" column="22" selection-start="504" selection-end="504" vertical-scroll-proportion="-0.28395063" vertical-offset="690" max-vertical-offset="2093">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="52" selection-start="4461" selection-end="4461" vertical-scroll-proportion="0.5897436" vertical-offset="2231" max-vertical-offset="4646" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="289" selection-end="289" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="735">
+        <state line="124" column="52" selection-start="4461" selection-end="4461" vertical-scroll-proportion="0.5897436" vertical-offset="2231" max-vertical-offset="4646">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/packages/artdarek/pusherer/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="406" selection-end="406" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="308" selection-end="308" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="103" selection-start="1470" selection-end="1470" vertical-scroll-proportion="-22.291666" vertical-offset="35" max-vertical-offset="1395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="53" selection-start="1132" selection-end="1136" vertical-scroll-proportion="0.813278" vertical-offset="252" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PluginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="39" selection-start="1008" selection-end="1008" vertical-scroll-proportion="19.208334" vertical-offset="1196" max-vertical-offset="1950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="34" selection-end="34" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/plugins/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="56" selection-start="531" selection-end="531" vertical-scroll-proportion="-0.03521127" vertical-offset="280" max-vertical-offset="990">
+        <state line="28" column="37" selection-start="568" selection-end="568" vertical-scroll-proportion="0.611586" vertical-offset="0" max-vertical-offset="1053">
           <folding />
         </state>
       </provider>
@@ -820,13 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="53" selection-start="400" selection-end="400" vertical-scroll-proportion="0.34947768" vertical-offset="0" max-vertical-offset="1053">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/ApplicationsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="44" selection-start="289" selection-end="289" vertical-scroll-proportion="0.305793" vertical-offset="0" max-vertical-offset="1053">
@@ -836,7 +884,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="46" selection-start="88" selection-end="88" vertical-scroll-proportion="0.06552707" vertical-offset="0" max-vertical-offset="1053">
+        <state line="7" column="43" selection-start="162" selection-end="162" vertical-scroll-proportion="0.1528965" vertical-offset="0" max-vertical-offset="1053">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="49" selection-start="175" selection-end="175" vertical-scroll-proportion="0.17473884" vertical-offset="0" max-vertical-offset="1610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141236_update_plugins_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="631" selection-end="631" vertical-scroll-proportion="0.49762583" vertical-offset="5" max-vertical-offset="1058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_08_142206_update_versions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="46" selection-start="369" selection-end="369" vertical-scroll-proportion="0.34947768" vertical-offset="0" max-vertical-offset="1053">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="137" selection-end="137" vertical-scroll-proportion="0.1965812" vertical-offset="0" max-vertical-offset="1053">
           <folding />
         </state>
       </provider>
