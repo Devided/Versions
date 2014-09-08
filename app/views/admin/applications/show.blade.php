@@ -65,18 +65,6 @@
                                 <p class="form-control-static">{{ HTML::link($app->url,null,['target' => '_blank']) }}</p>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class=" col-md-3 control-label">Status</label>
-                            <div class="col-lg-6">
-                                <p class="form-control-static">
-                                    @if($app->active)
-                                        <span class="text-success"><i class="fa fa-circle"></i> Active</span>
-                                    @else
-                                        <span class="text-danger"><i class="fa fa-circle"></i> Inactive</span>
-                                    @endif
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </section>
             </form>
