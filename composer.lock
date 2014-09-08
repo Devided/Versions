@@ -1818,8 +1818,21 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
+<<<<<<< HEAD
     "stability-flags": [],
     "prefer-stable": false,
     "platform": [],
     "platform-dev": []
+=======
+    "stability-flags": [
+
+    ],
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+>>>>>>> 566be8cb1b036acb17c607ada9a42d903da37de0
 }
