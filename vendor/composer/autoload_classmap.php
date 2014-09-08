@@ -34,6 +34,7 @@ return array(
     'ClassPreloader\\Parser\\DirVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+    'CreateApplicationsPluginsTable' => $baseDir . '/app/database/migrations/2014_09_08_141440_create_applications_plugins_table.php',
     'CreateApplicationsTable' => $baseDir . '/app/database/migrations/2014_09_03_150045_create_applications_table.php',
     'CreatePluginsTable' => $baseDir . '/app/database/migrations/2014_09_06_155149_create_plugins_table.php',
     'CreateUsersTable' => $baseDir . '/app/database/migrations/2014_09_03_153301_create_users_table.php',
