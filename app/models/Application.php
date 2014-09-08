@@ -1,5 +1,5 @@
 <?php
 
 class Application extends \Eloquent {
-	protected $fillable = ['name,active,url'];
+	protected $fillable = ['name,url'];
 }

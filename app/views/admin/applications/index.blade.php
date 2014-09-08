@@ -28,7 +28,6 @@
                         <tr>
                             <th>Name</th>
                             <th>Url</th>
-                            <th>Status</th>
                             <th>Risk</th>
                             <th>Actions</th>
                         </tr>
@@ -37,15 +36,8 @@
                             @foreach($applications as $app)
 
                                 <tr>
-                                    <td>{{{ $app->name }}}</td>
+                                    <td>{{ HTML::linkAction('ApplicationController@show',$app->name,[$app->id]) }}</td>
                                     <td>{{ HTML::link($app->url,null,['target' => '_blank']) }}</td>
-                                    <td>
-                                    @if($app->active)
-                                        <span class="text-success"><i class="fa fa-circle"></i> Active</span>
-                                    @else
-                                        <span class="text-danger"><i class="fa fa-circle"></i> Inactive</span>
-                                    @endif
-                                    </td>
                                     <td>
                                         <span class="text-success"><i class="fa fa-circle"></i> Ok</span>
                                     </td>

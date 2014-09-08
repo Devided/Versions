@@ -43,15 +43,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 control-label">Active</label>
-                            <div class="col-sm-10">
-                                <div class="switch switch-sm switch-success">
-                                    <div class="ios-switch on"><div class="on-background background-fill"></div><div class="state-background background-fill"></div><div class="handle"></div></div>
-                                    {{ Form::text('active',null,['type' => 'checkbox','checked' => 'checked', 'style' => 'display:none;', 'data-plugin-ios-switch' => '']) }}
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <footer class="panel-footer">
                         {{ Form::button('Save', ['class' => 'btn btn-primary', 'type' => 'submit']) }}
