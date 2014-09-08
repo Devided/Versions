@@ -36,7 +36,7 @@
                         @foreach($plugins as $plugin)
 
                         <tr @if($plugin->thread() == 'High') class="blinkRed blinkRedClass" @endif>
-                            <td>{{{ $plugin->name }}}</td>
+                            <td>{{ HTML::linkAction('PluginController@show',$plugin->name,[$plugin->id]) }}</td>
                             <td>{{{ $plugin->version_name() }}}</td>
                             <td>@include('admin.partials._thread', ['thread' => $plugin->thread()])</td>
                             <td class="actions">

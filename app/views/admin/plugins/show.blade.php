@@ -15,7 +15,7 @@
                 <section class="panel">
                     <header class="panel-heading">
 
-                        <h2 class="panel-title">Connected applications</h2>
+                        <h2 class="panel-title">Versions</h2>
 
                         <p class="panel-subtitle">
                             An overview of all applications using this plugin
@@ -48,15 +48,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class=" col-md-5 control-label">Current version</label>
+                            <label class=" col-md-5 control-label">Documentation</label>
                             <div class="col-lg-6">
-                                v{{ $plugin->version_name() }}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class=" col-md-5 control-label">Risk</label>
-                            <div class="col-lg-6">
-                                @include('admin.partials._thread', ['thread' => $plugin->thread()])
+                                {{ HTML::link($plugin->docurl, null, ['target' => '_blank']) }}
                             </div>
                         </div>
                     </div>
