@@ -62,7 +62,7 @@ class PluginController extends \BaseController {
     {
         if($plugin = Plugin::find($id))
         {
-            return View::make('admin.plugins.show')->with(['plugin' => Plugin::find($id)]);
+            return View::make('admin.plugins.show')->with(['plugin' => Plugin::find($id), 'versions' => Plugin::find($id)->versions()->paginate('10')]);
         }
     }
 

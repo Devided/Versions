@@ -38,17 +38,17 @@ Route::group(array('before' => 'auth'), function()
         'as'    =>  'dashboard'
     ]);
 
-    Route::resource('/applications', 'ApplicationController');
-    Route::post('/applications', ['as' => 'applications.store', 'uses' => 'ApplicationController@store', 'before' => 'csrf']);
-    Route::patch('/applications/{id}', ['uses' => 'ApplicationController@update', 'as' => 'applications.update', 'before' => 'csrf'] );
+    Route::resource('/application', 'ApplicationController');
+    Route::post('/application', ['as' => 'applications.store', 'uses' => 'ApplicationController@store', 'before' => 'csrf']);
+    Route::patch('/application/{id}', ['uses' => 'ApplicationController@update', 'as' => 'applications.update', 'before' => 'csrf'] );
     Route::resource('/plugin', 'PluginController');
     Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
     Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings', 'before' => 'csrf']);
     Route::get('/logout', ['uses' => 'SessionsController@destroy','as' => 'admin.logout']);
 });
 
-Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
 Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);
+Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
 
 // Iron MQ Push Queues
 // REMEMBER TO UPDATE QUEUE SUBSCRIPTION TO DOMAIN PATH

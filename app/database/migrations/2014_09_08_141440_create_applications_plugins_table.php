@@ -12,7 +12,7 @@ class CreateApplicationsPluginsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('applications_versions', function(Blueprint $table)
+		Schema::create('application_version', function(Blueprint $table)
 		{
 			$table->integer('application_id')->unsigned();
 			$table->integer('version_id')->unsigned();
@@ -35,7 +35,7 @@ class CreateApplicationsPluginsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('applications_versions');
+		Schema::drop('application_version');
 	}
 
 }

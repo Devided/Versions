@@ -33,7 +33,7 @@ class ApplicationController extends \BaseController {
 	public function store()
 	{
         $rules = [
-            'name'  => 'required|alphaNum|min:3',
+            'name'  => 'required|min:3',
             'url'   => 'required|active_url'
         ];
 
@@ -49,7 +49,7 @@ class ApplicationController extends \BaseController {
         $app->url = Input::get('url');
         $app->save();
 
-        return Redirect::action('applications.show',[$app->id])->withSuccess('Application created.');
+        return Redirect::action('application.show',[$app->id])->withSuccess('Application created.');
 	}
 
 	/**
@@ -62,9 +62,9 @@ class ApplicationController extends \BaseController {
 	public function show($id)
 	{
         if($app = Application::find($id))
-            return View::make('admin.applications.show')->with(['app' => Application::find($id)]);
+            return View::make('admin.applications.show')->with(['app' => Application::find($id),'connectedPlugins' => Application::find($id)->versions()->paginate('10')]);
         else
-            return Redirect::action('applications.index')->withErrors(['Application does not exist.']);
+            return Redirect::action('application.index')->withErrors(['Application does not exist.']);
     }
 
 	/**
@@ -79,7 +79,7 @@ class ApplicationController extends \BaseController {
         if($app = Application::find($id))
             return View::make('admin.applications.edit')->with(['app' => Application::find($id)]);
         else
-            return Redirect::action('applications.index')->withErrors(['Application does not exist.']);
+            return Redirect::action('application.index')->withErrors(['Application does not exist.']);
 	}
 
 	/**
@@ -92,7 +92,7 @@ class ApplicationController extends \BaseController {
 	public function update($id)
 	{
         $rules = [
-            'name'  => 'required|alphaNum|min:3',
+            'name'  => 'required|min:3',
             'url'   => 'required|active_url'
         ];
 
@@ -108,7 +108,7 @@ class ApplicationController extends \BaseController {
         $app->url = Input::get('url');
         $app->save();
 
-        return Redirect::action('applications.show',[$id])->withSuccess('Application settings saved.');
+        return Redirect::action('application.show',[$id])->withSuccess('Application settings saved.');
 	}
 
 	/**

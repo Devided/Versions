@@ -13,7 +13,7 @@
         <section class="panel">
             <header class="panel-heading">
                 <div class="panel-actions">
-                    <a href="{{ action('applications.create') }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
+                    <a href="{{ action('application.create') }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
                 </div>
                 <h2 class="panel-title">Applications</h2>
 
@@ -43,7 +43,7 @@
                                     </td>
                                     <td class="actions">
                                         {{ HTML::decode(HTML::linkAction('ApplicationController@show', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$app->id])) }}
-                                        <a href="#modalDelete" onclick="setupDeleteModal('{{{ $app->name }}}', '{{{ action('applications.index') }}}/{{ $app->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>
+                                        <a href="#modalDelete" onclick="setupDeleteModal('{{{ $app->name }}}', '{{{ action('application.index') }}}/{{ $app->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>
                                     </td>
                                 </tr>
 
@@ -77,7 +77,7 @@
         <footer class="panel-footer">
             <div class="row">
                 <div class="col-md-12 text-right">
-                    {{ Form::open(['method' => 'DELETE', 'action' => ['applications.destroy', NULL], 'id' => 'deleteForm']) }}
+                    {{ Form::open(['method' => 'DELETE', 'action' => ['application.destroy', NULL], 'id' => 'deleteForm']) }}
                         {{ Form::submit('Delete', ['class' => 'btn btn-success modal-confirm']) }}
                         <button class="btn btn-default modal-dismiss">Cancel</button>
                     {{ Form::close() }}

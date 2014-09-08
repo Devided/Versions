@@ -15,7 +15,7 @@
                 <section class="panel">
                     <header class="panel-heading">
                         <div class="panel-actions">
-                            <a href="{{ action('applications.create') }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
+                            <a href="{{ action('application.create') }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
                         </div>
 
                         <h2 class="panel-title">Connected plugins</h2>
@@ -25,7 +25,33 @@
                         </p>
                     </header>
                     <div class="panel-body">
-                        <p>test</p>
+                        <div class="table-responsive">
+                            <table class="table mb-none">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Version</th>
+                                    <th>Risk</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($connectedPlugins as $connectedPlugin)
+
+                                <tr>
+                                    <td>{{{ $connectedPlugin->plugin()->name }}}</td>
+                                    <td>{{{ $connectedPlugin->name }}}</td>
+                                    <td>@include('admin.partials._thread', ['thread' => $connectedPlugin->thread()])</td>
+                                    <td></td>
+                                </tr>
+
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pull-right">
+                            {{ $connectedPlugins->links() }}
+                        </div>
                     </div>
                 </section>
             </form>
@@ -35,7 +61,7 @@
                 <section class="panel">
                     <header class="panel-heading">
                         <div class="panel-actions">
-                            <a href="{{ action('applications.edit',[$app->id]) }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-edit"></i> Edit</button></a>
+                            <a href="{{ action('application.edit',[$app->id]) }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-edit"></i> Edit</button></a>
                         </div>
 
                         <h2 class="panel-title">Application details</h2>

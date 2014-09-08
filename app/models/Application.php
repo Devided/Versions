@@ -3,8 +3,8 @@
 class Application extends \Eloquent {
 	protected $fillable = ['name,url'];
 
-    public function plugins()
+    public function versions()
     {
-        return $this->belongsToMany('Plugin');
+        return $this->belongsToMany('Version');
     }
 }

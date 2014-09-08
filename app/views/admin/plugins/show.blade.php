@@ -14,6 +14,9 @@
             <form id="form2" class="form-horizontal form-bordered">
                 <section class="panel">
                     <header class="panel-heading">
+                        <div class="panel-actions">
+                            <a href="{{ action('plugin.edit', $plugin->id) }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
+                        </div>
 
                         <h2 class="panel-title">Versions</h2>
 
@@ -22,7 +25,31 @@
                         </p>
                     </header>
                     <div class="panel-body">
-                        test
+                        <div class="table-responsive">
+                            <table class="table mb-none">
+                                <thead>
+                                <tr>
+                                    <th>Version</th>
+                                    <th>Risk</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($versions as $version)
+
+                                <tr>
+                                    <td>{{{ $version->name }}}</td>
+                                    <td>@include('admin.partials._thread',['thread' => $version->thread()])</td>
+                                    <td></td>
+                                </tr>
+
+                                @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pull-right">
+                            {{ $versions->links() }}
+                        </div>
                     </div>
                 </section>
             </form>

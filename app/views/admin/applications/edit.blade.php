@@ -19,7 +19,7 @@
                         </p>
                     </header>
                     <div class="panel-body">
-                        {{ Form::model($app, ['route' => ['applications.update',$app->id], 'method' => 'PUT']) }}
+                        {{ Form::model($app, ['route' => ['application.update',$app->id], 'method' => 'PUT']) }}
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>

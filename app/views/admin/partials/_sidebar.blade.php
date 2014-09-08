@@ -15,7 +15,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ action('applications.index') }}">
+                        <a href="{{ action('application.index') }}">
                             <i class="fa fa-hdd-o" aria-hidden="true"></i>
                             <span>Applications</span>
                         </a>

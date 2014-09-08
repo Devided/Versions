@@ -19,7 +19,7 @@
                         </p>
                     </header>
                     <div class="panel-body">
-                        {{ Form::open(['route' => 'applications.store']) }}
+                        {{ Form::open(['route' => 'application.store']) }}
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Name</label>
