@@ -45,13 +45,15 @@ Route::group(array('before' => 'auth'), function()
     Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
     Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings', 'before' => 'csrf']);
     Route::get('/logout', ['uses' => 'SessionsController@destroy','as' => 'admin.logout']);
+
+     //versions of plugins
+    Route::get('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@create','as' => 'plugin.version.create']);
+    Route::post('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@store','as' => 'plugin.version.store']);
 });
 
 Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);
 Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
 
-// Iron MQ Push Queues
-// REMEMBER TO UPDATE QUEUE SUBSCRIPTION TO DOMAIN PATH
 Route::post('iron/receive', function()
 {
     return Queue::marshal();

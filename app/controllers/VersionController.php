@@ -11,6 +11,7 @@ class VersionController extends \BaseController {
 	public function index()
 	{
 		//
+        return 'ok';
 	}
 
 	/**
@@ -19,9 +20,9 @@ class VersionController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($pluginid)
 	{
-		return View::make('admin.plugins.create');
+		return View::make('admin.version.create')->with(['plugin' => Plugin::find($pluginid)]);
 	}
 
 	/**
@@ -30,11 +31,10 @@ class VersionController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-    public function store()
+    public function store($pluginid)
     {
         $rules = [
-            'name'  => 'required|alphaNum|min:3',
-            'url'   => 'required|alphaNum|active_url'
+            'name'  => 'required|min:1'
         ];
 
         $validator = Validator::make(Input::all(), $rules);
@@ -44,13 +44,13 @@ class VersionController extends \BaseController {
             return Redirect::back()->withErrors($validator->messages());
         }
 
-        $app = new Application;
-        $app->name = Input::get('name');
-        $app->url = Input::get('url');
-        $app->active = true;
-        $app->save();
+        $version = new Version;
+        $version->name = Input::get('name');
+        $version->js = Input::get('js');
+        $version->css = Input::get('css');
+        $version->save();
 
-        return Redirect::action('applications.index')->withSuccess('Application created.');
+        return Redirect::action('plugin.show',[$pluginid])->withSuccess('Version created.');
     }
 
 	/**

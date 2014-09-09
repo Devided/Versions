@@ -14,7 +14,7 @@
             <section class="panel">
                 <header class="panel-heading">
                     <div class="panel-actions">
-                        <a href="{{ action('plugin.edit', $plugin->id) }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
+                        <a href="{{ action('plugin.version.create', $plugin->id) }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
                     </div>
 
                     <h2 class="panel-title">Versions</h2>
