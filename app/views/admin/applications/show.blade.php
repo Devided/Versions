@@ -36,10 +36,15 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @if($connectedPlugins->isEmpty())
+                                <td>
+                                    <i>No plugins attached.</i>
+                                </td>
+                                @endif
                                 @foreach($connectedPlugins as $connectedPlugin)
 
                                 <tr>
-                                    <td>{{{ $connectedPlugin->plugin()->name }}}</td>
+                                    <td>{{{ $connectedPlugin->plugin->name }}}</td>
                                     <td>{{{ $connectedPlugin->name }}}</td>
                                     <td>@include('admin.partials._thread', ['thread' => $connectedPlugin->thread()])</td>
                                     <td></td>

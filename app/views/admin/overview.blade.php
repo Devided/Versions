@@ -10,19 +10,18 @@
                 <div class="widget-summary">
                     <div class="widget-summary-col widget-summary-col-icon">
                         <div class="summary-icon bg-primary">
-                            <i class="fa fa-life-ring"></i>
+                            <i class="fa fa-hdd-o"></i>
                         </div>
                     </div>
                     <div class="widget-summary-col">
                         <div class="summary">
-                            <h4 class="title">Support Questions</h4>
+                            <h4 class="title">Applications</h4>
                             <div class="info">
-                                <strong class="amount">1281</strong>
-                                <span class="text-primary">(14 unread)</span>
+                                <strong class="amount">{{ $totalapps }}</strong>
                             </div>
                         </div>
                         <div class="summary-footer">
-                            <a class="text-muted text-uppercase">(view all)</a>
+                            {{ HTML::linkAction('ApplicationController@index','View all') }}
                         </div>
                     </div>
                 </div>
@@ -36,18 +35,18 @@
                 <div class="widget-summary">
                     <div class="widget-summary-col widget-summary-col-icon">
                         <div class="summary-icon bg-secondary">
-                            <i class="fa fa-usd"></i>
+                            <i class="fa fa-cubes"></i>
                         </div>
                     </div>
                     <div class="widget-summary-col">
                         <div class="summary">
-                            <h4 class="title">Total Profit</h4>
+                            <h4 class="title">Plugins</h4>
                             <div class="info">
-                                <strong class="amount">$ 14,890.30</strong>
+                                <strong class="amount">{{ $totalplugins }}</strong>
                             </div>
                         </div>
                         <div class="summary-footer">
-                            <a class="text-muted text-uppercase">(withdraw)</a>
+                            {{ HTML::linkAction('PluginController@index','View all') }}
                         </div>
                     </div>
                 </div>
