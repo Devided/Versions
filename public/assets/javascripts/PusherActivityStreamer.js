@@ -12,7 +12,7 @@ function PusherActivityStreamer(activityChannel, ulSelector, options) {
     this._activityList = $(ulSelector);
 
     this._activityChannel.bind('activity', function(activity) {
-        self._handleActivity.call(self, activity, activity.type);
+        self._handleActivity.call(self, activity, 'stream');
     });
 
     this._itemCount = 0;
