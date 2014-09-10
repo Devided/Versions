@@ -5,8 +5,6 @@
 @section('page')
 <div class="row">
 
-    <ul id="activity_stream" class="activity-stream"></ul>
-
     <div class="col-md-12 col-lg-6 col-xl-6">
         <section class="panel panel-featured-left panel-featured-primary">
             <div class="panel-body">
@@ -46,6 +44,7 @@
                             <h4 class="title">Plugins</h4>
                             <div class="info">
                                 <strong class="amount">{{ $totalplugins }}</strong>
+                                <ul id="activity_stream" class="activity-stream"></ul>
                             </div>
                         </div>
                         <div class="summary-footer">
