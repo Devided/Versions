@@ -63,3 +63,10 @@ Route::post('iron/receive', function()
 {
     return Queue::marshal();
 });
+
+Route::get('/test', function()
+{
+    Pusherer::trigger('stream', 'stream', [
+        'msg' => 'YOLO'
+    ]);
+});

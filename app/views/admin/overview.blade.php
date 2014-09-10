@@ -4,6 +4,7 @@
 
 @section('page')
 <div class="row">
+
     <div class="col-md-12 col-lg-6 col-xl-6">
         <section class="panel panel-featured-left panel-featured-primary">
             <div class="panel-body">
@@ -52,6 +53,12 @@
                 </div>
             </div>
         </section>
+    </div>
+
+    <div class="col-md-12">
+
+        <ul id="activity_stream" class="activity-stream"></ul>
+
     </div>
 </div>
 @stop
