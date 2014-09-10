@@ -11,7 +11,7 @@ function PusherActivityStreamer(activityChannel, ulSelector, options) {
     this._activityChannel = activityChannel;
     this._activityList = $(ulSelector);
 
-    this._activityChannel.bind('activity', function(activity) {
+    this._activityChannel.bind('stream', function(activity) {
         self._handleActivity.call(self, activity, 'stream');
     });
 

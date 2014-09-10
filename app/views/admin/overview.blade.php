@@ -44,7 +44,6 @@
                             <h4 class="title">Plugins</h4>
                             <div class="info">
                                 <strong class="amount">{{ $totalplugins }}</strong>
-                                <ul id="activity_stream" class="activity-stream"></ul>
                             </div>
                         </div>
                         <div class="summary-footer">
@@ -54,6 +53,12 @@
                 </div>
             </div>
         </section>
+    </div>
+
+    <div class="col-md-12">
+
+        <ul id="activity_stream" class="activity-stream"></ul>
+
     </div>
 </div>
 @stop
