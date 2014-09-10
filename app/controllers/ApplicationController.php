@@ -125,4 +125,35 @@ class ApplicationController extends \BaseController {
 
         return Redirect::back()->withSuccess('Application removed.');
 	}
+
+    /**
+     * Links a plugin to an application
+     * GET /application/{appid}/link
+     *
+     * @param  int  $appid
+     * @return Response
+     */
+    public function link($appid)
+    {
+        if(Application::find($appid))
+            return View::make('admin.applications.link')->with(['app' => Application::find($appid)]);
+        else
+            return Redirect::action('application.index')->withErrors(['Application does not exist.']);
+    }
+
+    /**
+     * Links a version to an application
+     * GET /application/{appid}/link/{pluginid}
+     *
+     * @param  int  $appid
+     * @param  int  $pluginid
+     * @return Response
+     */
+    public function linkVersion($appid, $pluginid)
+    {
+        if(Application::find($appid) && Plugin::find($pluginid))
+            return View::make('admin.applications.linkversion')->with(['app' => Application::find($appid), 'plugin' => Plugin::find($pluginid)]);
+        else
+            return Redirect::action('application.index')->withErrors(['Application or plugin does not exist.']);
+    }
 }

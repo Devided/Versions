@@ -36,6 +36,8 @@
 {{ HTML::script('assets/vendor/magnific-popup/magnific-popup.js') }}
 {{ HTML::script('assets/vendor/jquery-placeholder/jquery.placeholder.js') }}
 {{ HTML::script('assets/vendor/ios7-switch/ios7-switch.js') }}
+{{ HTML::script('assets/vendor/jquery-validation/jquery.validate.js') }}
+{{ HTML::script('assets/vendor/bootstrap-wizard/jquery.bootstrap.wizard.js') }}
 {{ HTML::script('assets/javascripts/theme.js') }}
 {{ HTML::script('assets/javascripts/theme.custom.js') }}
 {{ HTML::script('assets/javascripts/theme.init.js') }}

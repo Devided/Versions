@@ -15,7 +15,7 @@
                 <section class="panel">
                     <header class="panel-heading">
                         <div class="panel-actions">
-                            <a href="{{ action('application.create') }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button></a>
+                            <a href="{{ action('application.plugin.link', [$app->id]) }}"><button type="button" class="btn btn-success btn-sm"><i class="fa fa-link"></i> Connect</button></a>
                         </div>
 
                         <h2 class="panel-title">Connected plugins</h2>
@@ -111,12 +111,12 @@
                     <div class="panel-body">
                         <p>CSS<br />
                             <code>
-                                &lt;link rel="stylesheet" type="text/css" href="{{ action('api.css',[($app->id * 50 + 4295)]) }}"&gt;
+                                &lt;link rel="stylesheet" type="text/css" href="{{ action('api.css',[($app->id)]) }}"&gt;
                             </code>
                         </p>
                         <p>Javascript<br />
                             <code>
-                                &lt;script src="{{ action('api.js',[($app->id * 50 + 4295)]) }}"&gt;
+                                &lt;script src="{{ action('api.js',[($app->id)]) }}"&gt;
                             </code>
                         </p>
                     </div>

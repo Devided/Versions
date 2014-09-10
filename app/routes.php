@@ -49,6 +49,11 @@ Route::group(array('before' => 'auth'), function()
      //versions of plugins
     Route::get('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@create','as' => 'plugin.version.create']);
     Route::post('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@store','as' => 'plugin.version.store']);
+
+    //link plugin to application
+    Route::get('/application/{appid}/link', ['uses' => 'ApplicationController@link', 'as' => 'application.plugin.link']);
+    Route::get('/application/{appid}/link/{pluginid}', ['uses' => 'ApplicationController@linkVersion', 'as' => 'application.plugin.linkversion']);
+    Route::post('/application/{appid/link/{pluginid}', ['before' => 'csrf', 'uses' => 'ApplicationController@storeLink', 'as' => 'application.plugin.storeLink']);
 });
 
 Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);
