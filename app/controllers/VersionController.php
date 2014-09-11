@@ -34,7 +34,8 @@ class VersionController extends \BaseController {
     public function store($pluginid)
     {
         $rules = [
-            'name'  => 'required|min:1'
+            'name'  => 'required|min:1',
+            'risk'  =>  'required|min:1'
         ];
 
         $validator = Validator::make(Input::all(), $rules);
@@ -46,11 +47,13 @@ class VersionController extends \BaseController {
 
         $version = new Version;
         $version->name = Input::get('name');
+        $version->plugin_id = intval($pluginid);
         $version->js = Input::get('js');
         $version->css = Input::get('css');
+        $version->risk = Input::get('risk');
         $version->save();
 
-        return Redirect::action('plugin.show',[$pluginid])->withSuccess('Version created.');
+        return Redirect::action('plugin.show',[$pluginid])->withSuccess('Plugin created.');
     }
 
 	/**
@@ -62,7 +65,7 @@ class VersionController extends \BaseController {
 	 */
     public function show($id)
     {
-        if($plugin = Plugin::find($id))
+        if($plugin = Version::find($id))
         {
             return View::make('admin.plugins.show')->with(['plugin' => Plugin::find($id)]);
         }
@@ -75,10 +78,9 @@ class VersionController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-    public function edit($id)
+    public function edit($pluginid, $versionid)
     {
-        if($plugin = Plugin::find($id))
-            return View::make('admin.applications.edit')->with(['app' => Application::find($id)]);
+        return View::make('admin.version.edit')->with(['version' => Version::find($versionid), 'plugin' => Plugin::find($pluginid)]);
     }
 
 	/**
@@ -88,9 +90,28 @@ class VersionController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($pluginid, $versionid)
 	{
-		//
+        $rules = [
+            'name'  => 'required|min:1',
+            'risk'  =>  'required|min:1'
+        ];
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails())
+        {
+            return Redirect::back()->withErrors($validator->messages());
+        }
+
+        $version = Version::find($versionid);
+        $version->name = Input::get('name');
+        $version->js = Input::get('js');
+        $version->css = Input::get('css');
+        $version->risk = Input::get('risk');
+        $version->save();
+
+        return Redirect::action('plugin.show',[$pluginid])->withSuccess('Plugin updated.');
 	}
 
 	/**

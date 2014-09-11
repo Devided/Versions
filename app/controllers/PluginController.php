@@ -48,7 +48,7 @@ class PluginController extends \BaseController {
         $plugin->docurl = Input::get('docurl');
         $plugin->save();
 
-        return Redirect::action('plugin.show',[$plugin->id])->withSuccess('Plugin created.');
+        return Redirect::action('plugin.version.create',[$plugin->id]);
     }
 
 	/**
@@ -119,6 +119,7 @@ class PluginController extends \BaseController {
 	public function destroy($id)
 	{
         $plugin = Plugin::find($id);
+        $plugin->versions()->delete();
         $plugin->delete();
 
         return Redirect::back()->withSuccess('Plugin removed.');

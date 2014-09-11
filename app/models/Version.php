@@ -1,7 +1,7 @@
 <?php
 
 class Version extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = ['name','plugin_id','css','js'];
 
     public function plugin()
     {

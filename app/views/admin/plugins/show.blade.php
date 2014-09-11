@@ -34,6 +34,11 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @if($versions->isEmpty())
+                            <td>
+                                <i>No versions (yet).</i>
+                            </td>
+                            @endif
                             @foreach($versions as $version)
 
                             <tr>

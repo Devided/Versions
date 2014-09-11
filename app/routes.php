@@ -56,7 +56,8 @@ Route::group(array('before' => 'auth'), function()
      //versions of plugins
     Route::get('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@create','as' => 'plugin.version.create']);
     Route::get('/plugin/{pluginid}/version/{versionid}/edit', ['uses' => 'VersionController@edit','as' => 'plugin.version.edit']);
-    //Route::post('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@store','as' => 'plugin.version.store']);
+    Route::put('/plugin/{pluginid}/version/{versionid}', ['uses' => 'VersionController@update','as' => 'plugin.version.update', 'before' => 'csrf']);
+    Route::post('/plugin/{pluginid}/version', ['uses' => 'VersionController@store','as' => 'plugin.version.store', 'before' => 'csrf']);
     Route::delete('/plugin/{pluginid}/version/{versionid}', ['uses' => 'VersionController@destroy','as' => 'plugin.version.destroy']);
 
 

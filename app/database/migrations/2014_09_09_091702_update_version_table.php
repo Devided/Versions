@@ -14,8 +14,8 @@ class UpdateVersionTable extends Migration {
 	{
 		Schema::table('versions', function(Blueprint $table)
 		{
-		    $table->text('css');
-            $table->text('js');
+		    $table->text('css')->nullable();
+            $table->text('js')->nullable();
 		});
 	}
 
