@@ -25,7 +25,6 @@ class SessionsController extends \BaseController {
         );
 
         $validator = Validator::make(Input::all(), $rules);
-
         // If the validator fails, redirect back to the form
         if ($validator->fails()) {
             return Redirect::to('login')
