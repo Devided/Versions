@@ -33,7 +33,7 @@ class PluginController extends \BaseController {
     public function store()
     {
         $rules = [
-            'name'  => 'required|alphaNum|min:3',
+            'name'  => 'required|min:3',
         ];
 
         $validator = Validator::make(Input::all(), $rules);
@@ -91,7 +91,7 @@ class PluginController extends \BaseController {
     public function update($id)
     {
         $rules = [
-            'name'  => 'required|alphaNum|min:3',
+            'name'  => 'required|min:3',
         ];
 
         $validator = Validator::make(Input::all(), $rules);
