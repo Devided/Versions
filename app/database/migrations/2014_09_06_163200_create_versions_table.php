@@ -4,7 +4,6 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
 class CreateVersionsTable extends Migration {
-
 	/**
 	 * Run the migrations.
 	 *

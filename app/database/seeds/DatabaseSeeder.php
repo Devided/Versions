@@ -1,5 +1,4 @@
 <?php
-
 class DatabaseSeeder extends Seeder {
 
      protected $tables = [

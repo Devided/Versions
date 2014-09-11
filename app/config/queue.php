@@ -51,10 +51,10 @@ return array(
 
 		'iron' => array(
 			'driver'  => 'iron',
-			'host'    => 'mq-aws-eu-west-1.iron.io',
-			'token'   => 'rhvRkCMhR0bWg2AmWr3aA2ZN18c',
-			'project' => '540daa21ce7f6b0005000029',
-			'queue'   => 'versions-push-queue',
+			'host'    => '',
+			'token'   => '',
+			'project' => '',
+			'queue'   => '',
 			'encrypt' => true,
 		),
 
