@@ -17,7 +17,7 @@ class APIController extends \BaseController {
             $js = $js . $version->js;
         }
 
-        return $js;
+        return Response::make($js, '200')->header('Content-Type', 'text/javascript');
 	}
 
 	/**
@@ -35,7 +35,7 @@ class APIController extends \BaseController {
             $css = $css . $version->css;
         }
 
-        return $css;
+        return Response::make($css, '200')->header('Content-Type', 'text/css');
 	}
 
 }
