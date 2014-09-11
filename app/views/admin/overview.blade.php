@@ -54,11 +54,5 @@
             </div>
         </section>
     </div>
-
-    <div class="col-md-12">
-
-        <ul id="activity_stream" class="activity-stream"></ul>
-
-    </div>
 </div>
 @stop

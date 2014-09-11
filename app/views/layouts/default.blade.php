@@ -35,20 +35,9 @@
 {{ HTML::script('assets/vendor/bootstrap/js/bootstrap.js') }}
 {{ HTML::script('assets/vendor/magnific-popup/magnific-popup.js') }}
 {{ HTML::script('assets/vendor/jquery-placeholder/jquery.placeholder.js') }}
-{{ HTML::script('assets/vendor/ios7-switch/ios7-switch.js') }}
-{{ HTML::script('assets/vendor/jquery-autosize/jquery.autosize.js') }}
 {{ HTML::script('assets/javascripts/theme.js') }}
 {{ HTML::script('assets/javascripts/theme.custom.js') }}
 {{ HTML::script('assets/javascripts/theme.init.js') }}
 {{ HTML::script('http://js.pusher.com/2.2/pusher.min.js') }}
-{{ HTML::script('assets/javascripts/PusherActivityStreamer.js') }}
-
-<script type="text/javascript">
-    $(function() {
-        var pusher = new Pusher('5218c7c448c691ad64bf');
-        var channel = pusher.subscribe('stream');
-        var streamer = new PusherActivityStreamer(channel, '#activity_stream');
-    });
-</script>
 </body>
 </html>

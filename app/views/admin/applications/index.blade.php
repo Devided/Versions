@@ -32,6 +32,11 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @if($applications->isEmpty())
+                        <td>
+                            <i>No applications (yet).</i>
+                        </td>
+                        @endif
                             @foreach($applications as $app)
 
                                 <tr>

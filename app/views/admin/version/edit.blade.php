@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', HTML::linkAction('PluginController@index','Plugins') . ' > ' . HTML::linkAction('PluginController@show',$plugin->name,[$plugin->id]) . ' > new version')
+@section('title', HTML::linkAction('PluginController@index','Plugins') . ' > ' . HTML::linkAction('PluginController@show',$plugin->name,[$plugin->id]) . ' > ' . $version->name . ' > edit version')
 
 @section('page')
 {{ Form::model($version, ['route' => ['plugin.version.update', $plugin->id, $version->id], 'method' => 'PUT']) }}

@@ -32,6 +32,11 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @if($plugins->isEmpty())
+                        <td>
+                            <i>No plugins (yet).</i>
+                        </td>
+                        @endif
                         @foreach($plugins as $plugin)
 
                         <tr>

@@ -75,17 +75,3 @@ Route::group(array('before' => 'auth'), function()
 
 Route::get('/api/{id}/css', ['uses' => 'APIController@css', 'as' => 'api.css']);
 Route::get('/api/{id}/js', ['uses' => 'APIController@js', 'as' => 'api.js']);
-
-Route::post('iron/receive', function()
-{
-    return Queue::marshal();
-});
-
-
-//pusher test
-Route::get('/test', function()
-{
-    Pusherer::trigger('stream', 'stream', [
-        'msg' => 'yolo'
-    ]);
-});

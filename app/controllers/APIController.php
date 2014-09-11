@@ -10,7 +10,14 @@ class APIController extends \BaseController {
 	 */
 	public function js($id)
 	{
-		//
+        $js = "";
+
+        foreach(Application::find($id)->versions()->get() as $version)
+        {
+            $js = $js . $version->js;
+        }
+
+        return $js;
 	}
 
 	/**
@@ -21,7 +28,14 @@ class APIController extends \BaseController {
 	 */
 	public function css($id)
 	{
-		//
+        $css = "";
+
+        foreach(Application::find($id)->versions()->get() as $version)
+        {
+            $css = $css . $version->css;
+        }
+
+        return $css;
 	}
 
 }

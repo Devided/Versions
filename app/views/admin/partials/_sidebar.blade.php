@@ -26,6 +26,12 @@
                             <span>Plugins</span>
                         </a>
                     </li>
+                    <li class="pull-down">
+                        <a href="{{ action('admin.logout') }}">
+                            <i class="fa fa-logout" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
