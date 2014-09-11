@@ -28,6 +28,7 @@
                         <tr>
                             <th>Name</th>
                             <th>Url</th>
+                            <th>Risk</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
