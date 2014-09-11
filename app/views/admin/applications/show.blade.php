@@ -44,10 +44,10 @@
                                 @foreach($connectedPlugins as $connectedPlugin)
 
                                 <tr>
-                                    <td>{{{ $connectedPlugin->plugin->name }}}</td>
+                                    <td>{{ HTML::linkAction('PluginController@show', $connectedPlugin->plugin->name,[$connectedPlugin->plugin->id]) }}</td>
                                     <td>{{{ $connectedPlugin->name }}}</td>
                                     <td>@include('admin.partials._thread', ['thread' => $connectedPlugin->thread()])</td>
-                                    <td></td>
+                                    <td><a href="#modalDelete" onclick="setupDeleteModal('{{{ $connectedPlugin->plugin->name . ' ' . $connectedPlugin->name }}}', '{{{ action('application.index') }}}/{{ $app->id }}/{{ $connectedPlugin->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a></td>
                                 </tr>
 
                                 @endforeach
@@ -86,7 +86,7 @@
                             <label class=" col-md-3 control-label">Risk</label>
                             <div class="col-lg-6">
                                 <p class="form-control-static">
-                                    <span class="text-danger"><i class="fa fa-circle"></i> High</span>
+                                    @include('admin.partials._thread', ['thread' => $risk])
                                 </p>
                             </div>
                         </div>
@@ -124,5 +124,33 @@
             </form>
         </div>
     </div>
+</div>
+
+<div id="modalDelete" class="zoom-anim-dialog modal-block modal-full-color modal-block-danger mfp-hide">
+    <section class="panel">
+        <header class="panel-heading">
+            <h2 class="panel-title">Are you sure?</h2>
+        </header>
+        <div class="panel-body">
+            <div class="modal-wrapper">
+                <div class="modal-icon">
+                    <i class="fa fa-question-circle"></i>
+                </div>
+                <div class="modal-text">
+                    <p>Are you sure that you want to delete <b><span id="modalDeleteName">null</span></b> from this application?</p>
+                </div>
+            </div>
+        </div>
+        <footer class="panel-footer">
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    {{ Form::open(['method' => 'DELETE', 'action' => ['application.plugin.delete', NULL], 'id' => 'deleteForm']) }}
+                    {{ Form::submit('Delete', ['class' => 'btn btn-success modal-confirm']) }}
+                    <button class="btn btn-default modal-dismiss">Cancel</button>
+                    {{ Form::close() }}
+                </div>
+            </div>
+        </footer>
+    </section>
 </div>
 @stop

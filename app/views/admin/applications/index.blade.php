@@ -42,7 +42,7 @@
                                         <span class="text-success"><i class="fa fa-circle"></i> Ok</span>
                                     </td>
                                     <td class="actions">
-                                        {{ HTML::decode(HTML::linkAction('ApplicationController@show', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$app->id])) }}
+                                        {{ HTML::decode(HTML::linkAction('ApplicationController@edit', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$app->id])) }}
                                         <a href="#modalDelete" onclick="setupDeleteModal('{{{ $app->name }}}', '{{{ action('application.index') }}}/{{ $app->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>
                                     </td>
                                 </tr>

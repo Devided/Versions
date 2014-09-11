@@ -4,7 +4,9 @@
 
 @section('page')
 <div class="col-md-12">
-    <form id="selects-form" action="{{ action('application.plugin.linkversion',['appid' => $app->id, 'pluginid' => '5']) }}" novalidate="novalidate">
+    @include('admin.partials._errors')
+
+    {{ Form::open(['route' => ['application.plugin.storePlugin', $app->id]]) }}
         <section class="panel">
             <header class="panel-heading">
                 <h2 class="panel-title">Select plugin</h2>
@@ -16,13 +18,7 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Plugin</label>
                     <div class="col-sm-9">
-                        <select id="company" class="form-control" required="">
-                            <option value="">Choose a Company</option>
-                            <option value="apple">Apple</option>
-                            <option value="google">Google</option>
-                            <option value="microsoft">Microsoft</option>
-                            <option value="yahoo">Yahoo</option>
-                        </select>
+                        {{ Form::select('plugin', $pluginlist, null, ['class' => 'form-control']) }}
                         <label class="error" for="company"></label>
                     </div>
                 </div>
@@ -30,11 +26,11 @@
             <footer class="panel-footer">
                 <div class="row">
                     <div class="col-sm-9 col-sm-offset-3">
-                        <button class="btn btn-success pull-right">Next</button>
+                        {{ Form::submit('Next',['class' => 'btn btn-success pull-right']) }}
                     </div>
                 </div>
             </footer>
         </section>
-    </form>
+    {{ Form::close() }}
 </div>
 @stop

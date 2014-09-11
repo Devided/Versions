@@ -38,7 +38,7 @@
                             <td>{{ HTML::linkAction('PluginController@show',$plugin->name,[$plugin->id]) }}</td>
                             <td>{{ HTML::link($plugin->docurl, null, ['target' => '_blank']) }}</td>
                             <td class="actions">
-                                {{ HTML::decode(HTML::linkAction('PluginController@show', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$plugin->id])) }}
+                                {{ HTML::decode(HTML::linkAction('PluginController@edit', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$plugin->id])) }}
                                 <a href="#modalDelete" onclick="setupDeleteModal('{{{ $plugin->name }}}', '{{{ action('plugin.index') }}}/{{ $plugin->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>
                             </td>
                         </tr>

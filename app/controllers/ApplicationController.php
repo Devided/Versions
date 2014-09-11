@@ -62,9 +62,18 @@ class ApplicationController extends \BaseController {
 	public function show($id)
 	{
         if($app = Application::find($id))
-            return View::make('admin.applications.show')->with(['app' => Application::find($id),'connectedPlugins' => Application::find($id)->versions()->paginate('10')]);
+        {
+            $dangerplugin = Application::find($id)->versions()->orderBy('risk', 'desc')->first();
+            if($dangerplugin)
+                $risk = $dangerplugin->thread();
+            else
+                $risk = 'None';
+            return View::make('admin.applications.show')->with(['app' => Application::find($id),'connectedPlugins' => Application::find($id)->versions()->paginate('10'), 'risk' => $risk]);
+        }
         else
+        {
             return Redirect::action('application.index')->withErrors(['Application does not exist.']);
+        }
     }
 
 	/**
@@ -136,9 +145,36 @@ class ApplicationController extends \BaseController {
     public function link($appid)
     {
         if(Application::find($appid))
-            return View::make('admin.applications.link')->with(['app' => Application::find($appid)]);
+            return View::make('admin.applications.link')->with(['app' => Application::find($appid), 'pluginlist' => Plugin::lists('name','id')]);
         else
             return Redirect::action('application.index')->withErrors(['Application does not exist.']);
+    }
+
+    /**
+     * Links a plugin to an application
+     * GET /application/{appid}/link
+     *
+     * @param  int  $appid
+     * @return Response
+     */
+    public function storePlugin($appid)
+    {
+        intval($appid);
+        $rules = [
+            'plugin'  => 'required|integer'
+        ];
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails())
+        {
+            return Redirect::back()->withErrors($validator->messages());
+        }
+
+        if(Plugin::find(Input::get('plugin')))
+            return Redirect::action('application.plugin.linkversion',[$appid,Input::get('plugin')]);
+        else
+            return Redirect::back()->withErrors(['Plugin does not exist.']);
     }
 
     /**
@@ -152,8 +188,55 @@ class ApplicationController extends \BaseController {
     public function linkVersion($appid, $pluginid)
     {
         if(Application::find($appid) && Plugin::find($pluginid))
-            return View::make('admin.applications.linkversion')->with(['app' => Application::find($appid), 'plugin' => Plugin::find($pluginid)]);
+            return View::make('admin.applications.linkversion')->with(['app' => Application::find($appid), 'plugin' => Plugin::find($pluginid), 'versionslist' => Plugin::find($pluginid)->versions()->lists('name','id')]);
         else
             return Redirect::action('application.index')->withErrors(['Application or plugin does not exist.']);
     }
+
+    /**
+     * Links a plugin to an application
+     * GET /application/{appid}/link
+     *
+     * @param  int  $appid
+     * @return Response
+     */
+    public function storeLink($appid,$pluginid)
+    {
+        intval($pluginid);
+        intval($appid);
+        $rules = [
+            'version'  => 'required|integer'
+        ];
+
+        $validator = Validator::make(Input::all(), $rules);
+
+        if($validator->fails())
+        {
+            return Redirect::back()->withErrors($validator->messages());
+        }
+
+        if(Version::find(Input::get('version')) && Application::find($appid))
+        {
+            Application::find($appid)->versions()->attach(Input::get('version'));
+            return Redirect::action('application.show',[$appid])->withSuccess('Plugin connected.');
+        }
+        else
+            return Redirect::action('application.index')->withErrors(['Version or application does not exist.']);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     * DELETE /application/{appid}/{versionid}
+     *
+     * @param  int  $appid
+     * @param  int  $versionid
+     * @return Response
+     */
+    public function deleteLink($appid,$versionid)
+    {
+        Application::find($appid)->versions()->detach($versionid);
+        return Redirect::action('ApplicationController@show',[$appid])->withSuccess('Plugin removed.');
+    }
+
+
 }

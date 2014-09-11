@@ -44,7 +44,7 @@
                                     <div class="image">
                                         <i class="fa fa-signal bg-success"></i>
                                     </div>
-                                    <span class="title">Connection Restaured</span>
+                                    <span class="title">Connection Restored</span>
                                     <span class="message">10/10/2014</span>
                                 </a>
                             </li>
@@ -69,9 +69,6 @@
             <div class="dropdown-menu">
                 <ul class="list-unstyled">
                     <li class="divider"></li>
-                    <li>
-                        {{ HTML::decode(HTML::link(action('admin.settings'),'<i class="fa fa-gear"></i> Settings', array('role' => 'menuitem','tabindex' => '-1')))}}
-                    </li>
                     <li>
                         {{ HTML::decode(HTML::link(action('admin.logout'),'<i class="fa fa-power-off"></i> Logout', array('role' => 'menuitem','tabindex' => '-1')))}}
                     </li>

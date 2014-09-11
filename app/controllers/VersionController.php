@@ -100,9 +100,14 @@ class VersionController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($pluginid, $versionid)
 	{
-		//
+        intval($versionid);
+		intval($versionid);
+
+        Version::find($versionid)->delete();
+
+        return Redirect::action('PluginController@show',[$pluginid])->withSuccess('Version removed.');
 	}
 
 }
