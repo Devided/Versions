@@ -10,7 +10,15 @@ class ApplicationController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('admin.applications.index')->with('applications', Application::paginate('10'));
+        //check applications for high or medium risk
+        $applications = DB::table('applications')
+            ->join('application_version', 'applications.id', '=', 'application_version.application_id')
+            ->join('versions', 'application_version.version_id', '=', 'versions.id')
+            ->select('applications.name','applications.id','applications.url','versions.risk')
+            ->where('versions.risk', '>' , '1')
+            ->paginate('10');
+
+		return View::make('admin.applications.index')->with('applications', $applications);
 	}
 
 	/**
