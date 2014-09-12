@@ -61,10 +61,10 @@
                 <label class="col-md-3 control-label" for="inputSuccess">Risk rating</label>
                 <div class="col-md-6">
                     <select class="form-control mb-md" name="risk">
-                        <option value="0">(0) - Ok</option>
-                        <option value="1">(1) - Low</option>
-                        <option value="2">(2) - Medium</option>
-                        <option value="3">(3) - High</option>
+                        <option value="0" {{ $version->selected(0) }}>(0) - Ok</option>
+                        <option value="1" {{ $version->selected(1) }}>(1) - Low</option>
+                        <option value="2" {{ $version->selected(2) }}>(2) - Medium</option>
+                        <option value="3" {{ $version->selected(3) }}>(3) - High</option>
                     </select>
                 </div>
             </div>

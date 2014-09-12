@@ -28,7 +28,6 @@
                         <tr>
                             <th>Name</th>
                             <th>Url</th>
-                            <th>Risk</th>
                             <th>Actions</th>
                         </tr>
                         </thead>
@@ -43,7 +42,6 @@
                                 <tr>
                                     <td>{{ HTML::linkAction('ApplicationController@show',$app->name,[$app->id]) }}</td>
                                     <td>{{ HTML::link($app->url,null,['target' => '_blank']) }}</td>
-                                    <td>@include('admin.partials._thread',['thread' => Application::thread($app->risk)])</td>
                                     <td class="actions">
                                         {{ HTML::decode(HTML::linkAction('ApplicationController@edit', '<span class="text-warning"><i class="fa fa-pencil"></i></span>', [$app->id])) }}
                                         <a href="#modalDelete" onclick="setupDeleteModal('{{{ $app->name }}}', '{{{ action('application.index') }}}/{{ $app->id }}')" class="delete-row modal-delete"><span class="text-danger"><i class="fa fa-trash-o"></i></span></a>

@@ -28,4 +28,31 @@ class Version extends \Eloquent {
                 return "Unknown";
         }
     }
+
+    public function selected($option)
+    {
+        switch($option)
+        {
+            case 0:
+                if($this->risk == '0'){
+                    return 'selected';
+                }
+                break;
+            case 1:
+                if($this->risk == '1'){
+                    return 'selected';
+                }
+                break;
+            case 2:
+                if($this->risk == '2'){
+                    return 'selected';
+                }
+                break;
+            case 3:
+                if($this->risk == '3'){
+                    return 'selected';
+                }
+                break;
+        }
+    }
 }
