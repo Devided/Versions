@@ -14,7 +14,7 @@
                 <div class="widget-summary">
                     <div class="widget-summary-col widget-summary-col-icon">
                         <div class="summary-icon bg-secondary">
-                            <i class="fa fa-cubes"></i>
+                            <i class="fa fa-hdd-o"></i>
                         </div>
                     </div>
                     <div class="widget-summary-col">
