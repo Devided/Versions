@@ -4,7 +4,6 @@
 
 @section('page')
 <div class="row">
-
     <div class="col-md-12 col-lg-6 col-xl-6">
         <section class="panel panel-featured-left panel-featured-primary">
             <div class="panel-body">
@@ -51,6 +50,19 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <section class="panel panel-danger">
+            <header class="panel-heading">
+                <h2 class="panel-title">High risk applications</h2>
+                <p class="panel-subtitle">A list of applications that use high risk or medium risk rated plugins.</p>
+            </header>
+            <div class="panel-body">
+                <code>.panel-danger</code>
             </div>
         </section>
     </div>
