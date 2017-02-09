@@ -1,20 +1,19 @@
 <?php
+
 // Composer: "fzaninotto/faker": "v1.3.0"
 use Faker\Factory as Faker;
 
-class ApplicationsTableSeeder extends Seeder {
+class ApplicationsTableSeeder extends Seeder
+{
+    public function run()
+    {
+        $faker = Faker::create();
 
-	public function run()
-	{
-		$faker = Faker::create();
-
-		foreach(range(1, 500) as $index)
-		{
-			Application::create([
-                'name'      =>  $faker->word,
-                'url'       =>  $faker->url
-			]);
-		}
-	}
-
+        foreach (range(1, 500) as $index) {
+            Application::create([
+                'name'      => $faker->word,
+                'url'       => $faker->url,
+            ]);
+        }
+    }
 }

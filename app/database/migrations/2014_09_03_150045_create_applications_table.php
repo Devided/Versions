@@ -3,33 +3,30 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateApplicationsTable extends Migration {
-
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
-		Schema::create('applications', function(Blueprint $table)
-		{
-			$table->increments('id');
+class CreateApplicationsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('applications', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('name')->notNull();
             $table->boolean('active')->notNull();
-			$table->timestamps();
-		});
-	}
+            $table->timestamps();
+        });
+    }
 
-
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
-		Schema::drop('applications');
-	}
-
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('applications');
+    }
 }

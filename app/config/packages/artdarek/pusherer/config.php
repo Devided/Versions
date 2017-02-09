@@ -1,31 +1,32 @@
-<?php 
+<?php
 
-return array( 
-	
-	/*
-	|--------------------------------------------------------------------------
-	| Pusher Config
-	|--------------------------------------------------------------------------
-	|
-	| Pusher is a simple hosted API for quickly, easily and securely adding
-	| realtime bi-directional functionality via WebSockets to web and mobile 
-	| apps, or any other Internet connected device.
-	|
-	*/
 
-	/**
-	 * App id
-	 */
-	'app_id' => '',
+return [
 
-	/**
-	 * App key
-	 */
-	'key' => '',
+    /*
+    |--------------------------------------------------------------------------
+    | Pusher Config
+    |--------------------------------------------------------------------------
+    |
+    | Pusher is a simple hosted API for quickly, easily and securely adding
+    | realtime bi-directional functionality via WebSockets to web and mobile
+    | apps, or any other Internet connected device.
+    |
+    */
 
-	/**
-	 * App Secret
-	 */
-	'secret' => ''
+    /*
+     * App id
+     */
+    'app_id' => '',
 
-);
+    /*
+     * App key
+     */
+    'key' => '',
+
+    /*
+     * App Secret
+     */
+    'secret' => '',
+
+];

@@ -1,7 +1,8 @@
 <?php
 
-class Application extends \Eloquent {
-	protected $fillable = ['name,url'];
+class Application extends \Eloquent
+{
+    protected $fillable = ['name,url'];
 
     public function versions()
     {
@@ -10,22 +11,21 @@ class Application extends \Eloquent {
 
     public static function thread($thread)
     {
-        switch($thread)
-        {
+        switch ($thread) {
             case 0:
-                return "None";
+                return 'None';
                 break;
             case 1:
-                return "Low";
+                return 'Low';
                 break;
             case 2:
-                return "Medium";
+                return 'Medium';
                 break;
             case 3:
-                return "High";
+                return 'High';
                 break;
             default:
-                return "Unknown";
+                return 'Unknown';
         }
     }
 }
