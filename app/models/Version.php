@@ -1,7 +1,8 @@
 <?php
 
-class Version extends \Eloquent {
-	protected $fillable = ['name','plugin_id','css','js'];
+class Version extends \Eloquent
+{
+    protected $fillable = ['name', 'plugin_id', 'css', 'js'];
 
     public function plugin()
     {
@@ -10,46 +11,44 @@ class Version extends \Eloquent {
 
     public function thread()
     {
-        switch($this->risk)
-        {
+        switch ($this->risk) {
             case 0:
-                return "None";
+                return 'None';
                 break;
             case 1:
-                return "Low";
+                return 'Low';
                 break;
             case 2:
-                return "Medium";
+                return 'Medium';
                 break;
             case 3:
-                return "High";
+                return 'High';
                 break;
             default:
-                return "Unknown";
+                return 'Unknown';
         }
     }
 
     public function selected($option)
     {
-        switch($option)
-        {
+        switch ($option) {
             case 0:
-                if($this->risk == '0'){
+                if ($this->risk == '0') {
                     return 'selected';
                 }
                 break;
             case 1:
-                if($this->risk == '1'){
+                if ($this->risk == '1') {
                     return 'selected';
                 }
                 break;
             case 2:
-                if($this->risk == '2'){
+                if ($this->risk == '2') {
                     return 'selected';
                 }
                 break;
             case 3:
-                if($this->risk == '3'){
+                if ($this->risk == '3') {
                     return 'selected';
                 }
                 break;

@@ -1,8 +1,8 @@
 <?php
 
-class Plugin extends \Eloquent {
-
-	protected $fillable = ['name', 'risk', 'docurl'];
+class Plugin extends \Eloquent
+{
+    protected $fillable = ['name', 'risk', 'docurl'];
 
     public function applications()
     {

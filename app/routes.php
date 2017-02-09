@@ -11,55 +11,51 @@
 |
 */
 
-Route::get('/', function(){
+Route::get('/', function () {
     return Redirect::action('login');
 });
 
 Route::get('/login', [
     'uses'  => 'SessionsController@getLogin',
-    'as'    => 'login'
+    'as'    => 'login',
 ]);
 Route::post('/login', [
-    'uses'  => 'SessionsController@postLogin',
-    'as'    => 'login',
-    'before' => 'csrf'
+    'uses'   => 'SessionsController@postLogin',
+    'as'     => 'login',
+    'before' => 'csrf',
 ]);
 
-
-Route::group(array('before' => 'auth'), function()
-{
-    Route::get('/', function()
-    {
+Route::group(['before' => 'auth'], function () {
+    Route::get('/', function () {
         return Redirect::to('/overview');
     });
 
     Route::get('/overview', [
-        'uses'  =>  'OverviewController@index',
-        'as'    =>  'dashboard'
+        'uses'  => 'OverviewController@index',
+        'as'    => 'dashboard',
     ]);
 
     //applications
     Route::resource('/application', 'ApplicationController');
     Route::post('/application', ['as' => 'applications.store', 'uses' => 'ApplicationController@store', 'before' => 'csrf']);
-    Route::patch('/application/{id}', ['uses' => 'ApplicationController@update', 'as' => 'applications.update', 'before' => 'csrf'] );
+    Route::patch('/application/{id}', ['uses' => 'ApplicationController@update', 'as' => 'applications.update', 'before' => 'csrf']);
 
     //plugins
     Route::resource('/plugin', 'PluginController');
 
     //settings
-    Route::get('/settings', ['uses' => 'SettingController@index','as' => 'admin.settings']);
-    Route::put('/settings', ['uses' => 'SettingController@update','as' => 'admin.settings', 'before' => 'csrf']);
+    Route::get('/settings', ['uses' => 'SettingController@index', 'as' => 'admin.settings']);
+    Route::put('/settings', ['uses' => 'SettingController@update', 'as' => 'admin.settings', 'before' => 'csrf']);
 
     //auth
-    Route::get('/logout', ['uses' => 'SessionsController@destroy','as' => 'admin.logout']);
+    Route::get('/logout', ['uses' => 'SessionsController@destroy', 'as' => 'admin.logout']);
 
      //versions of plugins
-    Route::get('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@create','as' => 'plugin.version.create']);
-    Route::get('/plugin/{pluginid}/version/{versionid}/edit', ['uses' => 'VersionController@edit','as' => 'plugin.version.edit']);
-    Route::put('/plugin/{pluginid}/version/{versionid}', ['uses' => 'VersionController@update','as' => 'plugin.version.update', 'before' => 'csrf']);
-    Route::post('/plugin/{pluginid}/version', ['uses' => 'VersionController@store','as' => 'plugin.version.store', 'before' => 'csrf']);
-    Route::delete('/plugin/{pluginid}/version/{versionid}', ['uses' => 'VersionController@destroy','as' => 'plugin.version.destroy']);
-
+    Route::get('/plugin/{pluginid}/version/create', ['uses' => 'VersionController@create', 'as' => 'plugin.version.create']);
+    Route::get('/plugin/{pluginid}/version/{versionid}/edit', ['uses' => 'VersionController@edit', 'as' => 'plugin.version.edit']);
+    Route::put('/plugin/{pluginid}/version/{versionid}', ['uses' => 'VersionController@update', 'as' => 'plugin.version.update', 'before' => 'csrf']);
+    Route::post('/plugin/{pluginid}/version', ['uses' => 'VersionController@store', 'as' => 'plugin.version.store', 'before' => 'csrf']);
+    Route::delete('/plugin/{pluginid}/version/{versionid}', ['uses' => 'VersionController@destroy', 'as' => 'plugin.version.destroy']);
 
     //link plugin to application (select plugin)
     Route::get('/application/{appid}/link', ['uses' => 'ApplicationController@link', 'as' => 'application.plugin.link']);
